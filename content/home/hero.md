@@ -2,12 +2,12 @@
 widget: hero
 headless: true
 weight: 10
-title: Ecological Forecasting & Dynamics Course
+title: Plant Population Ecology Course
 hero_media: book.svg
 design:
   background:
-    gradient_start: '#4bb4e3'
-    gradient_end: '#2b94c3'
+    gradient_start: '#99B898FF'
+    gradient_end: '#2A363BFF'
     text_color_light: true
 ---
 
