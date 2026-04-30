@@ -65,7 +65,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/weecology/forecasting-course'
+    url: 'https://github.com/annieschiffer/plant-population-ecology-course'
     content_dir: content
     branch: main
   feedback:
