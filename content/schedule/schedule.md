@@ -19,6 +19,7 @@ content:
       - Life history theory
       - Intraspecific competition
       - Interspecific competition
+      - Interspecific competition continued
       - Herbivory, predation, and disease
       - Mutualism
       - Dispersal and metapopulations
@@ -26,6 +27,8 @@ content:
       - Conservation of rare populations
       - Invasions
       - Adaptive Management
+      - TBD
+      - Presentations
     dates:
       - 'Week 1: September 1 & 3'
       - 'Week 2: September 8 & 10'
