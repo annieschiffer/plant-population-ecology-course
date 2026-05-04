@@ -7,8 +7,8 @@ hero_media: book.svg
 design:
   background:
     gradient_start: '#99B898FF'
-    gradient_end: '#2A363BFF'
+    gradient_end: '#99B898FF'
     text_color_light: true
 ---
 
-A course on how ecological systems change over time and how to forecast how they will change in the future. Reading + discussion + R tutorials.
+A course on the ecological processes that influence plant populations.
