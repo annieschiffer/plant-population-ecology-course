@@ -11,4 +11,4 @@ design:
     text_color_light: true
 ---
 
-A course on the ecological processes that influence plant populations. In this course, we link conceptual topics to their implementation in a mathematical model. For each topic, we will discuss readings and then play with the corresponding model. The models will be increasingly elaborate variations on one basic population model, not stand-alone, separate models.
+A course on the ecological processes that influence plant populations. In this course, we link conceptual topics to their implementation in a mathematical model. The models will be increasingly elaborate variations on one basic population model.
