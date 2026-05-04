@@ -14,18 +14,18 @@ content:
   filters:
     # The folders to display content from
     lessons:
-      - 'Population growth'
-      - 'Environmental variability, disturbance, and bet hedging'
-      - 'Life history theory'
-      - 'Intraspecific competition'
-      - 'Interspecific competition'
-      - 'Herbivory, predation, and disease'
-      - 'Mutualism'
-      - 'Dispersal and metapopulations'
-      - 'Local adaptation'
-      - 'Conservation of rare populations'
-      - 'Invasions'
-      - 'Adaptive Management'
+      - Population growth
+      - Environmental variability, disturbance, and bet hedging
+      - Life history theory
+      - Intraspecific competition
+      - Interspecific competition
+      - Herbivory, predation, and disease
+      - Mutualism
+      - Dispersal and metapopulations
+      - Local adaptation
+      - Conservation of rare populations
+      - Invasions
+      - Adaptive Management
     dates:
       - 'Week 1: September 1 & 3'
       - 'Week 2: September 8 & 10'
