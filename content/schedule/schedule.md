@@ -30,20 +30,21 @@ content:
       - TBD
       - Presentations
     dates:
-      - 'Week 1: September 1 & 3'
-      - 'Week 2: September 8 & 10'
-      - 'Week 3: September 15 & 17'
-      - 'Week 4: September 22 & 24'
-      - 'Week 5: September 29 & October 1'
-      - 'Week 6: October 6 & 8'
-      - 'Week 7: October 13 & 15'
-      - 'Week 8: October 20 & 22'
-      - 'Week 9: October 27 & 29'
-      - 'Week 10: November 3 & 5'
-      - 'Week 11: November 10 & 12'
-      - 'Week 12: November 17 & 19'
-      - 'Week 13: December 1 & 3'
-      - 'Week 14: December 8 & 10'
+      - September 1 & 3
+      - September 8 & 10
+      - September 15 & 17
+      - September 22 & 24
+      - September 29 & October 1
+      - October 6 & 8
+      - October 13 & 15
+      - October 20 & 22
+      - October 27 & 29
+      - November 3 & 5
+      - November 10 & 12
+      - November 17 & 19
+      - December 1 & 3
+      - December 8 & 10
+      - Finals week
     folders:
     tag: ''
     category: ''

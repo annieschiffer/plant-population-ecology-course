@@ -1,9 +1,9 @@
 ---
-title: "Forecasting with GAMs in R"
+title: "Lesson Template"
 linkTitle: ""
 type: book
-weight: 19
-summary: "Using generalized additive models for making forecasts"
+weight: 100
+summary: "Template for creating new lessons"
 show_date: false
 editable: true
 ---

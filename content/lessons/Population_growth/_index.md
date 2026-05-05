@@ -1,9 +1,9 @@
 ---
-title: "Range shifts"
-linkTitle: ""
+title: "Lesson Template"
+linkTitle: "Population growth"
 type: book
-weight: 10
-summary: "Discussion of shifts in species ranges in response to climate change"
+weight: 100
+summary: "Week 1: Population growth"
 show_date: false
 editable: true
 ---
