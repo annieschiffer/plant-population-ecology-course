@@ -10,15 +10,6 @@ main:
   - name: Lessons
     url: lessons/
     weight: 20
-  - name: Schedule
-    url: schedule/
-    weight: 30
   - name: Syllabus
     url: syllabus/
     weight: 40
-  - name: Getting Started
-    url: getting-started/
-    weight: 50
-  - name: About
-    url: about/
-    weight: 60

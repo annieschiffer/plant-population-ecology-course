@@ -1,9 +1,9 @@
 ---
-title: "Population growth"
+title: "September 1 & 3: Population growth"
 linkTitle: "Population growth"
 type: book
 weight: 100
-summary: "Week 1: Population growth"
+summary: ""
 show_date: false
 editable: true
 ---

@@ -6,15 +6,18 @@ weight: 20
 ## Plant Population Ecology
 
 
-| Instructor          | Dr. Peter Adler (he/him)    | Annie Schiffer (she/her) |
-|---------------------|-----------------------------|--------------------------|
-| Office Location     | BNR 287                     | BNR 279                  |
-| Email               | <peter.adler@usu.edu>       | <annie.schiffer@usu.edu> |
+Dr. Peter Adler (he/him)     
+BNR 287                                       
+<peter.adler@usu.edu>       
+
+Annie Schiffer (she/her)
+BNR 279
+<annie.schiffer@usu.edu>
+
 
 ### Times and Locations
 
 Tuesday & Thursday 10:30-11:45 am)
-
 Geology 301C
 
 ### Course Objectives
@@ -31,7 +34,7 @@ There is also a final project for this course. You will get time in class toward
 
 This course doesn't have a textbook, but all readings and textbook sections assigned will be available on this website.
 
-#### Grading
+### Grading
 
 60% of your grade will be based on class participation, which includes a final presentation at the end of the semester. 40% will be based on the computer lab exercises. Grades at the end of the course will be assigned as: 
 
@@ -48,7 +51,7 @@ F (<59.9%).
 
 The official USU policy is, “For work in graded courses, A shall denote exceptional performance, B above average performance, C satisfactory performance, D poor performance, and F failing performance.” (http://www.usu.edu/policies/pdf/Grading.pdf).
 
-#### Attendance Policy
+### Attendance Policy
 
 Two days can be missed with no impact on your grade (no need to submit make-up work), though I recommend that students attempt any missed class activities on their own time because subsequent class activities or discussions may rely on that knowledge.
 
@@ -74,19 +77,21 @@ That being said, we hope you will at least try the assignments without it at fir
 
 ### Topics and Schedule
 
-* September 1 & 3: Population growth
-* September 8 & 10: Environmental variability and bet hedging
-* September 15 & 17: Life history theory
-* September 22 & 24: Intraspecific competition
-* September 29 & October 1: Interspecific competition
-* October 6 & 8: Interspecific competition continued
-* October 13 & 15: Herbivory, predation, disease
-* October 20 & 22: Mutualism
-* October 27 & 29: Dispersal and metapopulations
-* November 3 & 5: Local adaptation
-* November 10 & 12: Conservation of rare populations
-* November 17 & 19: Invasions
-* December 1 & 3: Adaptive management
-* December 8 & 10: TBD
+| Week                    | Topic                                     |
+|-------------------------|-------------------------------------------|
+| September 1 & 3         |Population growth                          |
+| September 8 & 10        |Environmental variability and bet hedging  |
+| September 15 & 17       |Life history theory                        |
+| September 22 & 24       |Intraspecific competition                  |
+| September 29 & October 1|Interspecific competition                  |
+| October 6 & 8           |Interspecific competition continued        |
+| October 13 & 15         |Herbivory, predation, disease              |
+| October 20 & 22         |Mutualism                                  |
+| October 27 & 29         |Dispersal and metapopulations              |
+| November 3 & 5          |Genotypes and local adaptation             |
+| November 10 & 12        |Conservation of rare populations           |
+| November 17 & 19        |Invasions                                  |
+| December 1 & 3          |Adaptive management                        |
+| December 8 & 10         |TBD                                        |
 
 *Disclaimer:* This schedule represents our current plans and objectives. As we go through the semester, these plans will likely change. We will do our best to clearly communicate those changes.
