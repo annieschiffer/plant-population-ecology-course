@@ -1,9 +1,9 @@
 ---
-title: "Week 1: Population growth"
-linkTitle: "Week 1: Population growth"
+title: "Week 3: Life history theory"
+linkTitle: "Week 3: Life history theory"
 type: book
 weight: 100
-summary: "September 1 & 3"
+summary: "September 15 & 17"
 show_date: false
 editable: true
 ---
@@ -12,7 +12,7 @@ editable: true
 * First lesson objective
 * Second lesson objective
 
-**September 1**
+**September 15**
 
 DUE: read (fill in link)
 
@@ -20,6 +20,6 @@ Discussion questions:
 
 1. 
 
-**September 3**
+**September 17**
 
 Lab: (add link to R file for lab)

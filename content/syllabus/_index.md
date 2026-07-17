@@ -3,12 +3,10 @@ title: "Syllabus"
 weight: 20
 ---
 
-## Plant Population Ecology
-
-
 Dr. Peter Adler (he/him)     
 BNR 287                                       
 <peter.adler@usu.edu>       
+
 
 Annie Schiffer (she/her)
 BNR 279
@@ -17,7 +15,8 @@ BNR 279
 
 ### Times and Locations
 
-Tuesday & Thursday 10:30-11:45 am)
+Tuesday & Thursday 10:30-11:45 am
+
 Geology 301C
 
 ### Course Objectives
@@ -36,18 +35,30 @@ This course doesn't have a textbook, but all readings and textbook sections assi
 
 ### Grading
 
+
 60% of your grade will be based on class participation, which includes a final presentation at the end of the semester. 40% will be based on the computer lab exercises. Grades at the end of the course will be assigned as: 
 
-A (93 to 100% of total possible points); 
+
+A (93 to 100% of total possible points)
+
 A- (90 to 92.9%)
+
 B+ (87 to 89.9%)
+
 B (83 to 86.9%)
+
 B- (80 to 82.9%)
+
 C+ (77 to 79.9%)
+
 C (73 to 76.9%)
+
 C- (70 to 72.9%)
+
 D (60 to 69.9%)
-F (<59.9%). 
+
+F (<59.9%)
+
 
 The official USU policy is, “For work in graded courses, A shall denote exceptional performance, B above average performance, C satisfactory performance, D poor performance, and F failing performance.” (http://www.usu.edu/policies/pdf/Grading.pdf).
 
@@ -77,20 +88,21 @@ That being said, we hope you will at least try the assignments without it at fir
 
 ### Topics and Schedule
 
-| Week                    | Topic                                     |
+| Dates                   | Topic                                     |
 |-------------------------|-------------------------------------------|
 | September 1 & 3         |Population growth                          |
 | September 8 & 10        |Environmental variability and bet hedging  |
 | September 15 & 17       |Life history theory                        |
-| September 22 & 24       |Intraspecific competition                  |
-| September 29 & October 1|Interspecific competition                  |
-| October 6 & 8           |Interspecific competition continued        |
-| October 13 & 15         |Herbivory, predation, disease              |
-| October 20 & 22         |Mutualism                                  |
-| October 27 & 29         |Dispersal and metapopulations              |
-| November 3 & 5          |Genotypes and local adaptation             |
-| November 10 & 12        |Conservation of rare populations           |
-| November 17 & 19        |Invasions                                  |
+| September 22 & 24       |Quantifying life history                   |
+| September 29 & October 1|Intraspecific competition                  |
+| October 6 & 8           |Interspecific competition                  |
+| October 13 & 15         |Interspecific competition continued        |
+| October 20 & 22         |Herbivory, predation, disease              |
+| October 27 & 29         |Mutualism                                  |
+| November 3 & 5          |Dispersal and metapopulations              |
+| November 10 & 12        |Genotypes and local adaptation             |
+| November 17 & 19        |Conservation of rare populations           |
+| November 25             |Invasions                                  |
 | December 1 & 3          |Adaptive management                        |
 | December 8 & 10         |TBD                                        |
 

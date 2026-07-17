@@ -1,9 +1,9 @@
 ---
-title: "Week 1: Population growth"
-linkTitle: "Week 1: Population growth"
+title: "Week 14: Adaptive management"
+linkTitle: "Week 14: Adaptive management"
 type: book
 weight: 100
-summary: "September 1 & 3"
+summary: "December 1 & 3"
 show_date: false
 editable: true
 ---
@@ -12,7 +12,7 @@ editable: true
 * First lesson objective
 * Second lesson objective
 
-**September 1**
+**December 1**
 
 DUE: read (fill in link)
 
@@ -20,6 +20,10 @@ Discussion questions:
 
 1. 
 
-**September 3**
+**December 3**
+
+Work on final projects
+
+
 
 Lab: (add link to R file for lab)

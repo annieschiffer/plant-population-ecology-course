@@ -13,3 +13,6 @@ main:
   - name: Syllabus
     url: syllabus/
     weight: 40
+  - name: Videos
+    url: videos/
+    weight: 60
