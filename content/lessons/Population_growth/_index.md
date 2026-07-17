@@ -1,5 +1,5 @@
 ---
-title: "Lesson Template"
+title: "Population growth"
 linkTitle: "Population growth"
 type: book
 weight: 100
@@ -8,12 +8,12 @@ show_date: false
 editable: true
 ---
 
-{{% callout note %}}
-
 **Learning Objectives:**
 * First lesson objective
 * Second lesson objective
 
-{{% /callout %}}
+Reading: (fill in link)
 
-{{< list_children >}}
+Discussion questions: 
+
+Lab: (add link to R file for lab)
