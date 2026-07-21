@@ -1,0 +1,115 @@
+---
+title: "Quantifying life history"
+author: "Annie Schiffer"
+date: "2026-07-21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rstudioapi)
+current_path <- getActiveDocumentContext()$path 
+#setwd(dirname(current_path)) # set working directory to location of this file
+```
+
+## Learning objectives
+
+1. Convert life history information into a Leslie matrix
+2. Do sensitivity and elasticity analyses
+
+*review of last lecture: life tables and structured populations. Now going to do some math on the life history information and calculate population growth rates from life table information*
+
+## Leslie matrix
+
+* type of population projection matrix
+* goal: calculate population growth rate and project abundance in each age 
+* input: survival and fecundity rates from each age
+
+*let's take the stage-structured life table from last lecture and make it a biennial*
+
+*now ages instead of stages*
+
+| Age | Description | Number Alive | Survival to Next Stage | Fecundity |
+| ----- | ----------- | ----------------: | --------------------------: | -------------: |
+| 0     | Seed        |              1000 |                        0.20 |              0 |
+| 1     | Seedling    |               200 |                        0.25 |              0 |
+| 2     | Adult       |                50 |                           — |            100 |
+
+*let's put this in the leslie matrix format*
+
+* fecundity in first row
+* each age is a column
+* survival of each age on the diagonal
+
+```{r}
+leslie <- c(0,0.2,0,0,0,0.25,100,0,0)
+matrix(leslie,nrow=3,ncol=3)
+```
+
+*can think of 0s as percentage of one stage going to others*
+
+*for example, [3,1] is 0 because no seeds are going straight to adults*
+
+*[2,2] is 0 because no seedlings are going back to seeds*
+
+### Calculating $\lambda$
+
+*use linear algebra, not going to get into that, just some definitions*
+
+* eigenvalue = a scalar used in matrix multiplication
+* several eigenvalues for a given matrix *i.e. several scalars can work when doing this transformation/matrix multiplication*
+* largest, positive eigenvalue of a Leslie matrix *dominant - largest, positive* = $\lambda$ = population growth rate
+
+*really easy to do in R*
+
+### Population projection
+
+*we can also project the abundances of each age in a given time step*
+
+* multiply: Leslie matrix, matrix of N at t
+* product: matrix of N at t+1
+
+*quick refresher of matrix math*
+
+![](./matrix_math.jpg)
+
+```{r}
+leslie <- c(0,0.2,0,0,0,0.25,100,0,0)
+Nt <- c(1000, 200, 50)
+
+leslie.mat <- matrix(leslie,nrow=3,ncol=3)
+leslie.mat
+
+N.mat <- matrix(Nt,nrow=3,ncol=1)
+N.mat
+
+leslie.mat %*% N.mat
+```
+
+### Example of stage-structured population
+
+* each column = stage *same as Leslie matrix*
+* column 1 = rates from seeds to seeds/seedlings/adults
+* column 2 = rates from seedlings to seeds/seedlings/adults
+* adults to seeds is fecundity
+
+```{r}
+stage <- c(0,0.2,0,0,0.1,0.3,50,0,0.8)
+matrix(stage,nrow=3,ncol=3)
+```
+
+## Elasticity analyses
+
+*let's say you have rare plant population data. population growth rate is less than 1, declining, but you don't know why. Is it survival or reproduction issue?*
+
+* quantify influence of vital rates on $\lambda$
+* proportional change in growth rate
+
+*not absolute change in population growth rate, use sensitivity analysis for that*
+
+## Sensitivity analyses
+
+*let's say you could actually improve the survival of the population. Sensitivity analysis tells you how much the population growth rate would increase if you increased survival rate*
+
+* stage/age specific *increase survival of adults, juveniles, etc*
+* repeatedly compute population growth rate
