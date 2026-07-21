@@ -1,0 +1,90 @@
+---
+title: "Environmental variability and bet-hedging"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rstudioapi)
+current_path <- getActiveDocumentContext()$path 
+setwd(dirname(current_path)) # set working directory to location of this file
+```
+
+## Learning objectives
+
+1. Connect environmental variability to changes in lambda
+2. Compare populations with a range of growth rates and sensitivities to enviornmental variability
+3. Model a population with a seed bank
+
+*last lecture: unrestricted population growth*
+
+*modeled demographic stocahsticity by making lambda continuous random variable*
+
+*this is a workaround for modeling dynamics where temporal variable affects rates*
+
+## Temporal environmental variability
+
+* example: climate
+* $\lambda$ > 1 in wet years
+* $\lambda$ < 1 in dry years
+
+## Spatial environmental variability
+
+*on small scales, patchiness makes populations grow or shrink*
+
+* example: light & understory species
+* $\lambda$ varies in space
+* lattice models, cells affect population growth
+
+*draw 4x4 lattice, random patches and plants*
+
+*lambda=0.9 or 1.1 to indicate where populations growing and shrinking*
+
+## Bet-hedging
+
+* variability is a selective agent
+* populations vary sensitivity to environmental variability
+
+*go back to modeling lambda as continuous random variable*
+
+Population 1:
+
+$$ \lambda_1 \sim Normal(\mu = 1.2, \sigma = 0.5) $$
+
+Population 2:
+
+$$ \lambda_2 \sim Normal(\mu = 1, \sigma = 0.2) $$
+
+* pop 1 is more sensitive than pop 2 *indicated by sigma*
+* $N_1$ < $N_2$ even though $\lambda_1$ > $\lambda_2$
+
+*how do plants actually do this? with seed banks*
+
+### Seed banks
+
+* seed germination = sensitivity to good vs. bad years ($\sigma$)
+
+*with a seed bank, favorable years seeds germinate and become adult plants, stressful years seeds germinate and die or don't germinate* 
+
+* low sensitivity: similar number of seeds germinate each year
+* high sensitivity: number depends on environmental cues, boom-bust
+* spread risk *naturally seeds will germinate in different years, even if they experience same exact environment year to year*
+
+### Modeling seed banks
+
+*in lab, we'll model density independent growth with a seed bank*
+
+*still use lambda and N for per capita growth rate and population size*
+
+*here are some of the terms and a quick intro to the model*
+
+* g = germination rate *of seeds produced by adults*
+* s = survival of seeds in seed bank
+
+$$ N_{t+1} = N(1-g)s + \lambda g N $$
+
+* includes the seeds that go into the seed bank
+* first term = seeds in seed bank
+* second term = new seeds
+
+

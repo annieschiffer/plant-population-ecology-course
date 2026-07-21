@@ -1,0 +1,82 @@
+---
+title: "Life history theory"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rstudioapi)
+current_path <- getActiveDocumentContext()$path 
+#setwd(dirname(current_path)) # set working directory to location of this file
+```
+
+## Learning objectives
+
+1. Understand how and why growth, survival, and fecundity trade off
+2. Identify components of a life table
+3. Calculate stage-specific mortality/survival
+
+*Review of last lecture: environmental variability and how to deal with that*
+
+*modeled population growth with seed bank*
+
+*more into population structure - why might average something like seed mortality differ between species*
+
+## Population structure
+
+### Terminology
+
+* demography - structured populations
+* vital rates - describe each stage *germination, survival to reproduction, fecundity*
+* age and stage *related but useful in different circumstances*
+
+*stage examples: seeds, vegetative, reproductive*
+
+### Why care about population structure?
+
+* more realistic *that births and deaths are age/stage structured*
+
+*example: seedlings die in frost, reproductive adults don't*
+
+* different stages, different pressures *seeds-soil conditions, adults-competition*
+* compare individuals within stage
+
+## Tradeoffs
+
+*limited amount of energy and resources - need to decide how to allocate to growth, survival, reproduction*
+
+*most basic tradeoff is the r-K theory*
+
+### r-K
+
+* r species - fast growth *r*, many offspring, low investment
+* K species - slow growth, near carrying capacity, few offspring, high investment
+* **caveats** - binary instead of spectrum, generalization *example, trees like oaks that are long-lived but produce loads of acorns with low investment per acorn defy this theory*
+
+### Demographic triangle
+
+* growth, stasis, fecundity
+
+![](./demo_triangle.png)
+
+* can't optimize all three
+
+## Modeling life history stages
+
+* life tables - rates at each stage
+* abundance, survival, and fecundity
+
+*let's say we have a plant with 3 stages: seed, seedling (not reproductive), and adult*
+
+*seeds are in a seed bank*
+
+| Stage | Description | Number Alive | Survival to Next Stage | Mortality | Fecundity |
+| ----- | ----------- | ----------------: | --------------------------: | -------------: | -------------: |
+| 1     | Seed        |              1000 |                        0.20 |           0.80 |              0 |
+| 2     | Seedling    |               200 |                        0.25 |           0.75 |              0 |
+| 3     | Adult       |                50 |                           — |              — |            100 |
+
+* convert to matrix *and perform analyses, which is what we'll do next week*

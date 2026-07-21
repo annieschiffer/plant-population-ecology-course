@@ -3,17 +3,9 @@ title: "Syllabus"
 weight: 20
 ---
 
-Dr. Peter Adler (he/him)     
-BNR 287                                       
-<peter.adler@usu.edu>       
+Dr. Peter Adler (he/him), BNR 287,<peter.adler@usu.edu>       
 
-
-Annie Schiffer (she/her)
-
-BNR 279
-
-<annie.schiffer@usu.edu>
-
+Annie Schiffer (she/her), BNR 279, <annie.schiffer@usu.edu>
 
 ### Times and Locations
 
@@ -37,9 +29,7 @@ This course doesn't have a textbook, but all readings and textbook sections assi
 
 ### Grading
 
-
 60% of your grade will be based on class participation, which includes a final presentation at the end of the semester. 40% will be based on the computer lab exercises. Grades at the end of the course will be assigned as: A (93 to 100% of total possible points); A- (90 to 92.9%); B+ (87 to 89.9%); B (83 to 86.9%); B- (80 to 82.9%); C+ (77 to 79.9%); C (73 to 76.9%); C- (70 to 72.9%); D (60 to 69.9%); F (<59.9%)
-
 
 The official USU policy is, “For work in graded courses, A shall denote exceptional performance, B above average performance, C satisfactory performance, D poor performance, and F failing performance.” (http://www.usu.edu/policies/pdf/Grading.pdf).
 
