@@ -1,0 +1,88 @@
+---
+title: "Density dependence"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rstudioapi)
+current_path <- getActiveDocumentContext()$path 
+#setwd(dirname(current_path)) # set working directory to location of this file
+```
+
+## Learning objectives
+
+1. Understand how resource limitation and natural enemies affect population growth
+2. Model density dependence with continuous time using a logistic model
+3. Model density dependence with discrete time using a Beverton-Holt model and Ricker model
+
+*review of last lecture: structured populations, but population growth rate wasn't affected by abundance in any stage*
+
+*now we're adding density dependence, population growth depends on abundance*
+
+## Density-dependent processes
+
+*why would the number of individuals affect the growth of the population?*
+
+### Resource limitation
+
+* shared pool of resources *light, water, nutrients*
+* as resource availability decreases, population growth decreases
+* population has carrying capacity (K), equilibrium abundance
+
+### Natural enemies 
+
+* herbivores, pathogens, seed predators
+* as population size increases, attracts herbivores and predators, susceptible to disease
+* survival decreases, back to equilibrium
+
+### Self thinning
+
+* as trees size increases, intercept light from seedlings, seedling mortality increases
+
+*how do we model density dependence? again showing continuous and discrete time*
+
+*start with continuous since more familiar: logistic equation*
+
+## Logistic equation
+
+* r = intrinsic growth rate *same as r from first lecture*
+* K = carrying capacity *equilibrium abundance*
+
+$$ \frac{dN}{dt} = rN(1-\frac{N}{K}) $$
+
+*change in population size over time is rN, what we saw before*
+
+*now limited by carrying capacity, so if N = K, no change in size*
+
+![](./logistic.png)
+
+*now let's go into some models for discrete time, which we'll play with in the lab and can be more common for analysis*
+
+*two different models: Beverton-Holt and Ricker*
+
+## Beverton-Holt model
+
+* $\lambda$ - population growth rate
+* $\alpha$ - competition *strength of competition between conspecifics*
+* no K, related to $\alpha$
+
+$$ N_{t+1} = \frac{\lambda N_t}{1+aN_t} $$
+
+*again $\lambda$N is that unrestricted population growth, but now it's limited by abundance with the competition scalar*
+
+## Ricker model
+
+* same variables
+
+$$ N_{t+1} = N_t \lambda e^{-\alpha N_t} $$
+
+*same thing, $\lambda$N but limited by abundance and competition coefficient*
+
+### K vs. $\alpha$
+
+$$ \alpha = \frac{\lambda - 1}{K} $$
+
+*both discrete equations have basis in fisheries, where carrying capacity more helpful*
+
+*in plant populations, more interested in that $\alpha$ for determing strength of density dependence and competition*

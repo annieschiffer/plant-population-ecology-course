@@ -1,0 +1,83 @@
+---
+title: "Interspecific competition"
+author: "Annie Schiffer"
+date: "2026-07-22"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rstudioapi)
+current_path <- getActiveDocumentContext()$path 
+#setwd(dirname(current_path)) # set working directory to location of this file
+```
+
+## Learning objectives
+
+1. Know the processes influencing and outcomes of interspecific competition
+2. Understad the difference between phenomenological and mechanistic competition models
+3. Perform an invasion analysis
+
+## Processes
+
+* interspecific competition: one species has reduced growth rate in presence of another species
+* competition *intra and inter* enables multiple species to exist in community - diversity maintained
+* intra > inter
+
+*species is limiting itself more than others- this makes sense because if multiple species are going to coexist, we can't have a species that has unrestricted growth, it'll just use up all the resources*
+
+* stabilizing mechanisms:
+
+*these are all stabilizing mechanisms- they make it so multiple species maintained locally*
+
++ niche differentiation - fitness maximized with different resources or levels
+
+*somewhat related is storage effect, more a temporal mechanism that acts on multiple generations*
+
++ storage effect - environmental fluctuations, store seeds in good years, other plants grow in bad years
+
+*this assumes that species have different good years and bad years, ties back to niche differentiation, but more about storing success*
+
++ relative nonlinearity - relationship between fitness and resource level not all same *in other words, not all linear, they have different shapes*
+
+### Modeling interspecific competition
+
+*add to beverton-holt, previously:*
+
+$$ N_{i,t+1} = \frac{\lambda N_{i,t}}{1+\alpha_{ii} N_{i,t}} $$
+
+*add a second species to restrict population growth*
+
+* species i and j
+* $\alpha_{ij}$ = effect of j on i
+
+$$ N_{i,t+1} = \frac{\lambda N_{i,t}}{1+\alpha_{ii}N_{i,t}+\alpha_{ij}N_{j,t}} $$
+
+*we just added another term in the denominator, added subscripts to clarify which population we're modeling*
+
+* phenomenological = just effects ($\alpha$)
+* mechanistic model = models resource levels or processes
+
+*next week we'll talk about some mechanistic models*
+
+## Outcomes
+
+* competitive exclusion - one species outcompetes other species
+* coexistence - stabilize and both persist in long term *may have lower population growth or sizes compared to those without competitor, but if they persist, it's coexistence*
+* priority effects - depends on species arrival *whichever arrives in the community first*
+
+### Invasion analyses
+
+*I said you have coexistence when both persist in long term*
+
+*but a time series of populations alone can't tell you if there's coexistence*
+
+*plot example with 2 populations fluctuating over time*
+
+*this looks like coexistence, but what if transient dynamics, decline in future?*
+
+* both species increase from low density
+* long-term average population growth rate
+* $ log \frac{N_{t+1}}{N_t} $ > 0 for each species - coexistence, < 0 competitive exclusion
+
+
