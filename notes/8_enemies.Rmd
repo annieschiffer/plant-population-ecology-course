@@ -1,0 +1,72 @@
+---
+title: "Herbivory, predation, disease"
+author: "Annie Schiffer"
+date: "2026-07-23"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rstudioapi)
+current_path <- getActiveDocumentContext()$path 
+#setwd(dirname(current_path)) # set working directory to location of this file
+```
+
+## Learning objectives
+
+1. Understand the role of natural enemies for maintaining diversity
+2. Explain the relationship between growth and defense and know common defense strategies
+
+*last lecture: maintaining diversity, density dependence lecture mentioned natural enemies*
+
+## Natural enemies
+
+* high density - more susceptible to disease, attract herbivores and predators
+* differentiation leads to diversity *species with different natural enemies coexist because more self-limited than limited by other species*
+* Janzen-Connell hypothesis: host-specific enemies reduce seedling survival in dense areas
+* apparency theory: aggregation is more easily detected by enemies, vulnerable to herbivores
+* enemy release hypothesis: invasive plants successful because enemies aren't present
+
+## Plant defense against natural enemies
+
+*life history theory - talked about tradeoffs plants make between growth, stasis, reproduction because of limited energy*
+
+*same with defense, allocate energy to maintenance functions, growth or defense*
+
+* growth-defense tradeoff
+  + grow fast: rapid germination, low defense, higher herbivory *or predation or disease*
+  + well-protected: slow growth, high defense, lower herbivory 
+
+*trading off investment of energy*
+
+* dispersal-defense tradeoff
+  + diffuse seed dispersal: hard to locate, fewer defenses
+  + seed defense: aggregated seeds near parent, more defenses
+* attract animals *for dispersal*, deter predators *in species that require animal seed dispersers*
+
+### Defense strategies
+
+* physical: leaf toughness, spines, latex, hard seeds
+* chemical: secondary metabolites *bitter, spicy, etc*, delayed ripening, masting *local satiation*
+
+## Modeling natural enemies
+
+*consumer resource model from last time modeled consumer and resource dynamics, similar idea with modeling herbivory*
+
+* coupled plant-herbivore dynamics
+* a = attack rate *rate that a single herbivore finds and consumes plants*
+* e = conversion efficiency *rate that consumed plants converted into new herbivores*
+* H = herbivore abundance
+* m = herbivore mortality
+
+* N = plant abundance
+* K = carrying capacity
+* r = intrinsic growth rate
+
+$$ \frac{dN}{dt} = rN (1 - \frac{N}{K}) - aNH $$
+
+$$ \frac{dH}{dt} = e (aNH) - mH $$
+
+
+
+
