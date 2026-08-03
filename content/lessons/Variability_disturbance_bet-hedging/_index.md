@@ -2,7 +2,7 @@
 title: "Week 2: Environmental variability and bet-hedging"
 linkTitle: "Week 2: Environmental variability and bet-hedging"
 type: page
-weight: 100
+weight: 102
 summary: "September 8 & 10"
 show_date: false
 editable: true

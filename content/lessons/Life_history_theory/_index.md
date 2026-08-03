@@ -2,7 +2,7 @@
 title: "Week 3: Life history theory"
 linkTitle: "Week 3: Life history theory"
 type: book
-weight: 100
+weight: 103
 summary: "September 15 & 17"
 show_date: false
 editable: true

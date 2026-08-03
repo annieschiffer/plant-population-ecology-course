@@ -3,7 +3,7 @@ widget: hero
 headless: true
 weight: 10
 title: Plant Population Ecology Course
-hero_media: plant.svg
+hero_media: pagelines-brands-solid-full.svg
 design:
   background:
     gradient_start: '#99B898FF'

@@ -2,7 +2,7 @@
 title: "Week 10: Dispersal and metapopulations"
 linkTitle: "Week 10: Dispersal and metapopulations"
 type: book
-weight: 100
+weight: 110
 summary: "November 3 & 5"
 show_date: false
 editable: true

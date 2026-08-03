@@ -11,7 +11,7 @@ feature:
     icon_pack: fas
     name: Lectures
     description: "Short introductions to each topic are presented in class and posted as recordings on the course website."
-  - icon: computer
+  - icon: laptop
     icon_pack: fas
     name: Labs
     description: "Thursday labs demonstrate concepts by building on a single population model. Labs are group assignments in R."
