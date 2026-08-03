@@ -4,20 +4,16 @@ title: "Lessons"
 weight: 20
 ---
 
-# Week 1: Population growth
+## Week 1: Population growth
 
 **Learning Objectives**
 * First lesson objective
 * Second lesson objective
 
-## September 1
+### September 1
 
 DUE: read (fill in link)
 
-Discussion questions: 
-
-1. 
-
-## September 3
+### September 3
 
 Lab: (add link to R file for lab)
