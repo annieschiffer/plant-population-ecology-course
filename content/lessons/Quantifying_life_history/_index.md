@@ -1,7 +1,7 @@
 ---
 title: "Week 4: Quantifying life history"
 linkTitle: "Week 4: Quantifying life history"
-type: book
+type: page
 weight: 104
 summary: "September 22 & 24"
 show_date: false

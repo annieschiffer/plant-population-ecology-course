@@ -1,8 +1,8 @@
 ---
 title: "Week 11: Genotypes and local adaptation"
 linkTitle: "Week 11: Genotypes and local adaptation"
-type: book
-weight: 100
+type: page
+weight: 111
 summary: "November 10 & 12"
 show_date: false
 editable: true

@@ -1,8 +1,8 @@
 ---
 title: "Week 13: Invasions"
 linkTitle: "Week 13: Invasions"
-type: book
-weight: 100
+type: page
+weight: 113
 summary: "November 25"
 show_date: false
 editable: true

@@ -1,8 +1,8 @@
 ---
 title: "Week 14: Adaptive management"
 linkTitle: "Week 14: Adaptive management"
-type: book
-weight: 100
+type: page
+weight: 114
 summary: "December 1 & 3"
 show_date: false
 editable: true

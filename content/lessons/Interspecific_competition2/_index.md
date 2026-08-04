@@ -1,8 +1,8 @@
 ---
 title: "Week 7: Interspecific competition"
 linkTitle: "Week 7: Interspecific competition"
-type: book
-weight: 100
+type: page
+weight: 107
 summary: "October 13 & 15"
 show_date: false
 editable: true

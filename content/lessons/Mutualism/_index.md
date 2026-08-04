@@ -1,8 +1,8 @@
 ---
 title: "Week 9: Mutualism"
 linkTitle: "Week 9: Mutualism"
-type: book
-weight: 100
+type: page
+weight: 109
 summary: "October 27 & 29"
 show_date: false
 editable: true

@@ -1,8 +1,8 @@
 ---
 title: "Week 12: Conservation of rare populations"
 linkTitle: "Week 12: Conservation of rare populations"
-type: book
-weight: 100
+type: page
+weight: 112
 summary: "November 17 & 19"
 show_date: false
 editable: true

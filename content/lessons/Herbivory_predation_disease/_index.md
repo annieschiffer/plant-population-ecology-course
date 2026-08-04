@@ -1,8 +1,8 @@
 ---
 title: "Week 8: Herbivory, predation, disease"
 linkTitle: "Week 8: Herbivory, predation, disease"
-type: book
-weight: 100
+type: page
+weight: 108
 summary: "October 20 & 22"
 show_date: false
 editable: true
