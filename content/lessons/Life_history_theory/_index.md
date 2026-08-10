@@ -9,8 +9,9 @@ editable: true
 ---
 
 **Learning Objectives**
-* First lesson objective
-* Second lesson objective
+* Understand how and why growth, survival, and fecundity trade off
+* Identify components of a life table
+* Calculate stage-specific mortality/survival
 
 **September 15**
 

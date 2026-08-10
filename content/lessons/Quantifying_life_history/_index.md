@@ -9,8 +9,8 @@ editable: true
 ---
 
 **Learning Objectives**
-* First lesson objective
-* Second lesson objective
+* Understand why ecologists do sensitivity and elasticity analyses
+* Do sensitivity and elasticity analyses
 
 **September 22**
 

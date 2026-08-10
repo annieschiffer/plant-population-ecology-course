@@ -9,8 +9,9 @@ editable: true
 ---
 
 **Learning Objectives**
-* First lesson objective
-* Second lesson objective
+* Understand how resource limitation and natural enemies affect population growth
+* Model density dependence with continuous time using a logistic model
+* Model density dependence with discrete time using Beverton-Holt and Ricker models
 
 **September 29**
 

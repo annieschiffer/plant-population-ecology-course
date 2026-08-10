@@ -9,8 +9,9 @@ editable: true
 ---
 
 **Learning Objectives**
-* First lesson objective
-* Second lesson objective
+* Know the processes influencing and outcomes of interspecific competition
+* Perform an invasion analysis
+
 
 **October 6**
 

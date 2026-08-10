@@ -9,8 +9,9 @@ editable: true
 ---
 
 **Learning Objectives**
-* First lesson objective
-* Second lesson objective
+* Know the difference between a phenomenological and mechanistic competition model
+* Understand how resource availability affects coexistence
+* Know the strengths and limitations of common mechanistic models
 
 **October 13**
 

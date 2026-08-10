@@ -9,8 +9,9 @@ editable: true
 ---
 
 **Learning Objectives**
-* First lesson objective
-* Second lesson objective
+* Connect environmental variability to changes in lambda
+* Compare populations with a range of growth rates and sensitivities to environmental variability
+* Model a population with a seed bank
 
 **September 8**
 

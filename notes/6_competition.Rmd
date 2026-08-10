@@ -78,6 +78,6 @@ $$ N_{i,t+1} = \frac{\lambda N_{i,t}}{1+\alpha_{ii}N_{i,t}+\alpha_{ij}N_{j,t}} $
 
 * both species increase from low density
 * long-term average population growth rate
-* $ log \frac{N_{t+1}}{N_t} $ > 0 for each species - coexistence, < 0 competitive exclusion
+* $log \frac{N_{t+1}}{N_t}$ > 0 for each species - coexistence, < 0 competitive exclusion
 
 

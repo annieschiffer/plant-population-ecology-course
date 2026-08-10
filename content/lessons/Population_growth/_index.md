@@ -9,16 +9,15 @@ editable: true
 ---
 
 **Learning Objectives**
-* First lesson objective
-* Second lesson objective
+* Understand basic processes influencing population size
+* Plot population sizes over time with different growth rates
+* Model a population with discrete and continuous time
 
 **September 1**
 
-DUE: read (fill in link)
+Course introduction
 
-Discussion questions: 
-
-1. 
+Lecture on density-independent population growth
 
 **September 3**
 

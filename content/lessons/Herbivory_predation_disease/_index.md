@@ -9,8 +9,8 @@ editable: true
 ---
 
 **Learning Objectives**
-* First lesson objective
-* Second lesson objective
+* Understand the role of natural enemies for maintaining diversity
+* Explain the relationship between growth and defense and know common plant defense strategies
 
 **October 20**
 
