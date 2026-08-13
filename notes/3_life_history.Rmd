@@ -15,15 +15,15 @@ current_path <- getActiveDocumentContext()$path
 
 ## Learning objectives
 
-1. Understand how and why growth, survival, and fecundity trade off
-2. Identify components of a life table
-3. Calculate stage-specific mortality/survival
+1. Know the terms and methods for analyzing structured populations
+2. Convert life history information into a Leslie matrix
+3. Get population growth rate from a Leslie matrix
 
 *Review of last lecture: environmental variability and how to deal with that*
 
 *modeled population growth with seed bank*
 
-*more into population structure - why might average something like seed mortality differ between species*
+*assumed all individuals are same - in reality, different stages & ages within population*
 
 ## Population structure
 
@@ -44,26 +44,6 @@ current_path <- getActiveDocumentContext()$path
 * different stages, different pressures *seeds-soil conditions, adults-competition*
 * compare individuals within stage
 
-## Tradeoffs
-
-*limited amount of energy and resources - need to decide how to allocate to growth, survival, reproduction*
-
-*most basic tradeoff is the r-K theory*
-
-### r-K
-
-* r species - fast growth *r*, many offspring, low investment
-* K species - slow growth, near carrying capacity, few offspring, high investment
-* **caveats** - binary instead of spectrum, generalization *example, trees like oaks that are long-lived but produce loads of acorns with low investment per acorn defy this theory*
-
-### Demographic triangle
-
-* growth, stasis, fecundity
-
-![](./demo_triangle.png)
-
-* can't optimize all three
-
 ## Modeling life history stages
 
 * life tables - rates at each stage
@@ -79,4 +59,59 @@ current_path <- getActiveDocumentContext()$path
 | 2     | Seedling    |               200 |                        0.25 |           0.75 |              0 |
 | 3     | Adult       |                50 |                           — |              — |            100 |
 
-* convert to matrix *and perform analyses, which is what we'll do next week*
+* convert to matrix 
+
+## Leslie matrix
+
+* quantify and analyze structured populations
+* inputs: survival and fecundity rates from each age
+* calculate population growth rate and project abundance in each age 
+
+*let's take the stage-structured life table from last lecture and make it a biennial*
+
+*now ages instead of stages*
+
+| Age | Description | Number Alive | Survival to Next Stage | Fecundity |
+| ----- | ----------- | ----------------: | --------------------------: | -------------: |
+| 0     | Seed        |              1000 |                        0.20 |              0 |
+| 1     | Seedling    |               200 |                        0.25 |              0 |
+| 2     | Adult       |                50 |                           — |            100 |
+
+*let's put this in the leslie matrix format*
+
+* fecundity in first row
+* each age is a column
+* survival of each age on the diagonal
+
+```{r}
+leslie <- c(0,0.2,0,0,0,0.25,100,0,0)
+matrix(leslie,nrow=3,ncol=3)
+```
+
+*can think of 0s as percentage of one stage going to others*
+
+*for example, [3,1] is 0 because no seeds are going straight to adults*
+
+*[2,2] is 0 because no seedlings are going back to seeds*
+
+### Calculating $\lambda$
+
+*use linear algebra, not going to get into that, just some definitions*
+
+* eigenvalue = a scalar used in matrix multiplication
+* several eigenvalues for a given matrix *i.e. several scalars can work when doing this transformation/matrix multiplication*
+* largest, positive eigenvalue of a Leslie matrix *dominant - largest, positive* = $\lambda$ = population growth rate
+
+*really easy to do in R, will do in lab*
+
+### (maybe skip) Example of stage-structured population
+
+* each column = stage *same as Leslie matrix*
+* column 1 = rates from seeds to seeds/seedlings/adults
+* column 2 = rates from seedlings to seeds/seedlings/adults
+* adults to seeds is fecundity
+
+```{r}
+stage <- c(0,0.2,0,0,0.1,0.3,50,0,0.8)
+matrix(stage,nrow=3,ncol=3)
+```

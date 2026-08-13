@@ -14,55 +14,37 @@ current_path <- getActiveDocumentContext()$path
 
 ## Learning objectives
 
-1. Convert life history information into a Leslie matrix
+1. Understand how and why growth, survival, and fecundity trade off
 2. Do sensitivity and elasticity analyses
 
-*review of last lecture: life tables and structured populations. Now going to do some math on the life history information and calculate population growth rates from life table information*
+*review of last lecture: life tables and structured populations. How do we compare species with different life history strategies?*
 
-## Leslie matrix
+*analyze structured populations by manipulating elements of the matrix (vital rates)*
 
-* type of population projection matrix
-* goal: calculate population growth rate and project abundance in each age 
-* input: survival and fecundity rates from each age
 
-*let's take the stage-structured life table from last lecture and make it a biennial*
+## Tradeoffs
 
-*now ages instead of stages*
+*limited amount of energy and resources - need to decide how to allocate to growth, survival, reproduction*
 
-| Age | Description | Number Alive | Survival to Next Stage | Fecundity |
-| ----- | ----------- | ----------------: | --------------------------: | -------------: |
-| 0     | Seed        |              1000 |                        0.20 |              0 |
-| 1     | Seedling    |               200 |                        0.25 |              0 |
-| 2     | Adult       |                50 |                           — |            100 |
+*most basic tradeoff is the r-K theory*
 
-*let's put this in the leslie matrix format*
+### r-K
 
-* fecundity in first row
-* each age is a column
-* survival of each age on the diagonal
+* r species - fast growth *r*, many offspring, low investment
+* K species - slow growth, near carrying capacity, few offspring, high investment
+* **caveats** - binary instead of spectrum, generalization *example, trees like oaks that are long-lived but produce loads of acorns with low investment per acorn defy this theory*
 
-```{r}
-leslie <- c(0,0.2,0,0,0,0.25,100,0,0)
-matrix(leslie,nrow=3,ncol=3)
-```
+### Demographic triangle
 
-*can think of 0s as percentage of one stage going to others*
+* growth, stasis, fecundity
 
-*for example, [3,1] is 0 because no seeds are going straight to adults*
+![](./demo_triangle.png)
 
-*[2,2] is 0 because no seedlings are going back to seeds*
+* can't optimize all three
 
-### Calculating $\lambda$
+## Analyzing structured populations
 
-*use linear algebra, not going to get into that, just some definitions*
-
-* eigenvalue = a scalar used in matrix multiplication
-* several eigenvalues for a given matrix *i.e. several scalars can work when doing this transformation/matrix multiplication*
-* largest, positive eigenvalue of a Leslie matrix *dominant - largest, positive* = $\lambda$ = population growth rate
-
-*really easy to do in R*
-
-### Population projection
+### (skip this?) Population projection
 
 *we can also project the abundances of each age in a given time step*
 
@@ -86,19 +68,7 @@ N.mat
 leslie.mat %*% N.mat
 ```
 
-### Example of stage-structured population
-
-* each column = stage *same as Leslie matrix*
-* column 1 = rates from seeds to seeds/seedlings/adults
-* column 2 = rates from seedlings to seeds/seedlings/adults
-* adults to seeds is fecundity
-
-```{r}
-stage <- c(0,0.2,0,0,0.1,0.3,50,0,0.8)
-matrix(stage,nrow=3,ncol=3)
-```
-
-## Elasticity analyses
+### Elasticity analyses
 
 *let's say you have rare plant population data. population growth rate is less than 1, declining, but you don't know why. Is it survival or reproduction issue?*
 
@@ -107,7 +77,7 @@ matrix(stage,nrow=3,ncol=3)
 
 *not absolute change in population growth rate, use sensitivity analysis for that*
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 *let's say you could actually improve the survival of the population. Sensitivity analysis tells you how much the population growth rate would increase if you increased survival rate*
 

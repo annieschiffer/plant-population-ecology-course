@@ -21,4 +21,4 @@ Lecture on density-independent population growth
 
 **September 3**
 
-Lab: (add link to R file for lab)
+Lab: [Problem Set 1](/rmarkdown/ProblemSet1.html)
