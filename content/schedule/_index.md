@@ -1,5 +1,5 @@
 
 ---
-title: "Lessons"
+title: "Schedule"
 weight: 20
 ---
