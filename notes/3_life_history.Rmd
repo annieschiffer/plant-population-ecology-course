@@ -32,6 +32,7 @@ current_path <- getActiveDocumentContext()$path
 * demography - structured populations
 * vital rates - describe each stage *germination, survival to reproduction, fecundity*
 * age and stage *related but useful in different circumstances*
+* stable stage distribution - proportion of individuals in each age/stage *even as total population size varies*
 
 *stage examples: seeds, vegetative, reproductive*
 
@@ -46,30 +47,17 @@ current_path <- getActiveDocumentContext()$path
 
 ## Modeling life history stages
 
-* life tables - rates at each stage
-* abundance, survival, and fecundity
-
-*let's say we have a plant with 3 stages: seed, seedling (not reproductive), and adult*
+*let's say we have a plant with 3 ages: seed (0), seedling (not reproductive) (1), and adult (2)*
 
 *seeds are in a seed bank*
-
-| Stage | Description | Number Alive | Survival to Next Stage | Mortality | Fecundity |
-| ----- | ----------- | ----------------: | --------------------------: | -------------: | -------------: |
-| 1     | Seed        |              1000 |                        0.20 |           0.80 |              0 |
-| 2     | Seedling    |               200 |                        0.25 |           0.75 |              0 |
-| 3     | Adult       |                50 |                           — |              — |            100 |
-
-* convert to matrix 
 
 ## Leslie matrix
 
 * quantify and analyze structured populations
-* inputs: survival and fecundity rates from each age
+* inputs: abundance, probability of transition to next stage, and fecundity
 * calculate population growth rate and project abundance in each age 
 
-*let's take the stage-structured life table from last lecture and make it a biennial*
-
-*now ages instead of stages*
+*let's make an age-structured life table*
 
 | Age | Description | Number Alive | Survival to Next Stage | Fecundity |
 | ----- | ----------- | ----------------: | --------------------------: | -------------: |
@@ -81,7 +69,7 @@ current_path <- getActiveDocumentContext()$path
 
 * fecundity in first row
 * each age is a column
-* survival of each age on the diagonal
+* survival to next stage on the diagonal
 
 ```{r}
 leslie <- c(0,0.2,0,0,0,0.25,100,0,0)

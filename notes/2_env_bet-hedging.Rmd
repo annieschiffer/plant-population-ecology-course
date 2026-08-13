@@ -49,16 +49,16 @@ setwd(dirname(current_path)) # set working directory to location of this file
 
 Population 1:
 
-$$ \lambda_1 \sim Normal(\mu = 1.2, \sigma = 0.5) $$
+$$ \lambda_1 \sim Normal(\mu = 2.2, \sigma = 0.8) $$
 
 Population 2:
 
-$$ \lambda_2 \sim Normal(\mu = 1, \sigma = 0.2) $$
+$$ \lambda_2 \sim Normal(\mu = 2, \sigma = 1.2) $$
 
-* pop 1 is more sensitive than pop 2 *indicated by sigma*
-* $N_1$ < $N_2$ even though $\lambda_1$ > $\lambda_2$
+* pop 2 is more sensitive than pop 1 *indicated by sigma*
+* at a given t, $N_1$ < $N_2$ even though $\lambda_1$ > $\lambda_2$ *if it's a "good" year*
 
-*how do plants actually do this? with seed banks*
+*how do plants actually deal with environmental variation and do this? with seed banks*
 
 ### Seed banks
 
