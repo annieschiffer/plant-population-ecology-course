@@ -17,9 +17,9 @@ marketing:
   seo:
     site_type: Open Educational Resource
     local_business_type: ''
-    org_name: 'Weecology'
-    summary: 'Open education resource and lesson material for learning ecological forecasting.'
-    twitter: 'weecology'
+    org_name: ''
+    summary: ''
+    twitter: ''
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -33,7 +33,7 @@ header:
   navbar:
     enable: true
     align: l
-    show_logo: false
+    show_logo: true
     show_language: false
     show_day_night: true
     show_search: true
