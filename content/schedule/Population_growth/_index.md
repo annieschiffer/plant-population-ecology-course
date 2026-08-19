@@ -1,6 +1,6 @@
 ---
 title: "Week 1: Population growth"
-linkTitle: "Week 2: Population growth"
+linkTitle: "Week 1: Population growth"
 type: page
 weight: 101
 summary: "September 1 & 3"

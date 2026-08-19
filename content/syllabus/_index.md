@@ -37,8 +37,8 @@ There is also a final project for this course. We will provide time in class tow
 
 ### Course Materials
 
-This course does not have a textbook. All readings and textbook sections assigned will either be available via links on this website
-or as pdfs posted on the course Canvas page.
+This course does not have a textbook. All readings and textbook sections assigned will be available via links on this website (whenever possible)
+and as pdfs posted on the course Canvas page.
 
 ### Grading
 
