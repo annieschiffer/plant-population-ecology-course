@@ -3,7 +3,6 @@ title: "Week 14: Adaptive management"
 linkTitle: "Week 14: Adaptive management"
 type: page
 weight: 114
-summary: "December 1 & 3"
 show_date: false
 editable: true
 ---
@@ -12,18 +11,3 @@ editable: true
 * First lesson objective
 * Second lesson objective
 
-**December 1**
-
-DUE: read (fill in link)
-
-Discussion questions: 
-
-1. 
-
-**December 3**
-
-Work on final projects
-
-
-
-Lab: (add link to R file for lab)

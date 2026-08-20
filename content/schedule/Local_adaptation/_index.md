@@ -3,7 +3,6 @@ title: "Week 11: Genotypes and local adaptation"
 linkTitle: "Week 11: Genotypes and local adaptation"
 type: page
 weight: 111
-summary: "November 10 & 12"
 show_date: false
 editable: true
 ---
@@ -12,14 +11,3 @@ editable: true
 * First lesson objective
 * Second lesson objective
 
-**November 10**
-
-DUE: read (fill in link)
-
-Discussion questions: 
-
-1. 
-
-**November 12**
-
-Lab: (add link to R file for lab)
