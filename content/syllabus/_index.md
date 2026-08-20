@@ -3,7 +3,7 @@ title: "Syllabus"
 weight: 20
 ---
 
-Dr. Peter Adler (he/him), BNR 287,<peter.adler@usu.edu>       
+Dr. Peter Adler (he/him), BNR 287, <peter.adler@usu.edu>       
 
 Annie Schiffer (she/her), BNR 279, <annie.schiffer@usu.edu>
 
