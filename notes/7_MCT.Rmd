@@ -1,0 +1,44 @@
+---
+title: "Modern coexistence theory"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rstudioapi)
+current_path <- getActiveDocumentContext()$path 
+#setwd(dirname(current_path)) # set working directory to location of this file
+```
+
+## Learning objectives
+
+1. Know the terminology used in MCT and how it relates to processes we've already discussed
+
+*last lecture: processes that lead to coexistence and diverse communities, general*
+
+*today, specifically talking about modern coexistence theory*
+
+## Modern coexistence theory
+
+* coexistence: fitness differences, large niche differences
+* niche differences: species differences that make species limit itself more than others *processes we talked about last week*
+* fitness differences: species differences that determine outcome without niche differences *superior vs. inferior competitor*
+
+*how do you keep niche differences large and fitness differences small?*
+
+### Mechanisms
+
+* storage effect - environmental fluctuations, store seeds in good years, other plants grow in bad years
+
+*this assumes that species have different good years and bad years, ties back to niche differentiation, but more about storing success*
+
+* relative nonlinearity - relationship between fitness and resource level not all same *in other words, not all linear, they have different shapes*
+* fitness-density covariance - intraspecific aggregation *fitness highest where other conspecifics are, requires spatial heterogeneity*
+
+## Pros and cons
+
+* advantages: quantitative, strength of mechanisms
+* disadvantages: fitness/niche differences easier than mechanisms
+
+
+
