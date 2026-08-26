@@ -6,10 +6,10 @@ setwd("G:/My Drive/AdlerLabDocs/PlantPopEcol/code")
 
 ### define population growth function-----------------------
 
-DI_SB_growth <- function(N,g,s,lambda){
+DI_SB_growth <- function(N,g,s,fec){
   germinants <- g*N   # number of plants germinating out of the seed bank
   surv_seeds <- N*(1-g)*s  # number of ungerminated seeds that survive
-  new_seeds <- lambda*germinants  # fecundity (production of new seeds)
+  new_seeds <- fec*germinants  # fecundity (production of new seeds)
   total_seeds <- surv_seeds+new_seeds
   output <- c(total_seeds,germinants,surv_seeds,new_seeds)
   return(output)
@@ -17,8 +17,8 @@ DI_SB_growth <- function(N,g,s,lambda){
 
 ### set parameters ------------------------------------------
 
-lambda_mu <- 1.8      # mean fecundity (must be > 0)
-lambda_sigma <- 0.2  # year-to-year standard deviation of fecundity (must be > 0)
+fec_mu <- 1.8      # mean fecundity (must be > 0)
+fec_sigma <- 0.2  # year-to-year standard deviation of fecundity (must be > 0)
 g <- 0.5              # germination rate
 s <- 0.8              # survival of ungerminated seeds
 
@@ -28,13 +28,13 @@ timesteps <- 100  # number of time steps to simulate
 Nmatrix <- matrix(NA,nrow=timesteps,ncol=4)  # matrix to store population time series
 colnames(Nmatrix) <- c("total_seeds","germinants","surv_seeds","new_seeds")
 Nmatrix[1,] <- c(1,0,0,0)  # initial population state
-lambda <- rnorm(timesteps,lambda_mu, lambda_sigma) # draw lambdas from a distribution
-lambda[lambda<0] <- 0   # set negative lambdas to zero
+fec <- rnorm(timesteps,fec_mu, fec_sigma) # draw fecundities from a distribution
+fec[fec<0] <- 0   # set negative fecundities to zero
 
 ### run simulation ------------------------------------------
 
 for(i in 2:timesteps){
-  Nmatrix[i,] <- DI_SB_growth(Nmatrix[i-1,1],g,s,lambda[i])
+  Nmatrix[i,] <- DI_SB_growth(Nmatrix[i-1,1],g,s,fec[i])
 }
 
 # calculate long-term average population growth rate (geometric mean)

@@ -373,7 +373,13 @@ explain it to me. In particular, you should be able to relate each line
 in the function I create, DI_SB_growth, with the terms in the following
 equation:</p>
 <p><span class="math display">\[N_{t+1} = s(g-1)N_t +
-gN_t\lambda_t\]</span></p>
+gF_tN_t\]</span></p>
+<p>Note that I changed notation in this script compared to last week:
+where <code>lambda</code> appeared last week, I now use <code>fec</code>
+for fecundity. That is to distinguish fecundity from the population
+growth rate, <span class="math inline">\(\lambda\)</span>. In last
+week’s model, the parameter <code>lambda</code> <em>was</em> the
+population growth rate.</p>
 </div>
 <div id="problems" class="section level2">
 <h2>Problems</h2>
@@ -388,29 +394,28 @@ seedbanker, set</p>
 s &lt;- 0.8              # survival of ungerminated seeds</code></pre>
 <p>Which life history has a higher long-term average population growth
 rate in an environment with little temporal variation (set
-<code>lambda_mu &lt;- 2</code> and <code>lambda_sigma &lt;- 0.1</code>?
-Which life history has a higher long-term average population growth rate
-in a variable environment (keep <code>lambda_mu &lt;- 2</code> but
-change <code>lambda_sigma &lt;- 1.5</code>)? (You will need to repeat
-the simulation 5 or 10 times for each parameter combination to get a
-good answer.) Can you explain why you get this result? Hint: consider
-the standard deviation of the annual growth rates,
-<code>lambda_sigma</code>.</p>
+<code>fec_mu &lt;- 2</code> and <code>fec_sigma &lt;- 0.1</code>? Which
+life history has a higher long-term average population growth rate in a
+variable environment (keep <code>fec_mu &lt;- 2</code> but change
+<code>fec_sigma &lt;- 1.5</code>)?<br />
+(You will need to repeat the simulation 5 or 10 times for each parameter
+combination to get a good answer.) Can you explain why you get this
+result? Hint: consider the standard deviation of the annual growth
+rates, <code>fec_sigma</code>.)</p>
 <p>P2. ‘Bet-hedging’ is the idea that, in a variable environment,
 evolutionary selection can act on the variability of fitness
-(<code>lambda_sigma</code> in our model) in addition to acting on mean
-fitness. Please use the model to demonstrate this principle. You will
-compare the long-term average growth rate for two parameter sets. You
-could imagine this as two competing genotypes–the one with the higher
-long-term average growth rate will increase in frequency in the
-population. For both runs, set</p>
+(<code>fec_sigma</code> in our model) in addition to acting on mean
+fitness. Please use the model to demonstrate this principle by comparing
+the long-term average growth rate for two parameter sets. For both runs,
+set</p>
 <pre class="r"><code>g &lt;- 0.5              # germination rate
 s &lt;- 0.8              # survival of ungerminated seeds</code></pre>
-<p>Explain why your results show that “evolutionary selection can act on
-the variability of fitness in addition to acting on mean fitness.” In
-addition, please restate the idea of bet hedging without all the jargon
-I used in the previous sentence. How would you explain it someone who
-never took any college biology courses?</p>
+<p>but choose different values for <code>fec_mu</code> and
+<code>fec_sigma</code>. Explain why your results show that “evolutionary
+selection can act on the variability of fitness in addition to acting on
+mean fitness.” In addition, please restate the idea of bet hedging
+without the jargon I used in the previous sentence. How would you
+explain it someone who never took any college biology courses?</p>
 </div>
 
 

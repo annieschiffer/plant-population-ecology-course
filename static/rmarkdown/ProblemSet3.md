@@ -7,7 +7,8 @@ date: "2026-08-7"
 
 ## Purpose
 
-This problem set re-writes the annual plant model from Week 2 as a matrix population model representing two life stage: seeds and plants. Doing this makes it possible to turn our model of an annual plant with a seed abnk into a model of a perennial plant with a seedbank.
+This problem set re-writes the annual plant model from Week 2 as a matrix population model representing two life stage: seeds and plants. 
+Doing this makes it possible to turn our model of an annual plant with a seedbank into a model of a perennial plant with a seedbank.
 
 ## Getting started
 
@@ -15,7 +16,8 @@ Download the script `03_stagestructured_growth.R` from the course website, save 
 ```r
 03_stagestructured_growth.R")
 ```
-Lines 7 - 51 are copied from last week's code. Lines 53 - 78 contain the new part: rewriting last week's model as a matrix population model. You should understand lines 60-64 and be prepared to explain them to me. I also expect you to understand and be able to explalin line 74:
+Lines 7 - 51 are copied from last week's code. Lines 53 - 78 contain the new part: rewriting last week's model as a matrix population model. 
+You should understand lines 60-64 and be prepared to explain them to me. I also expect you to understand and be able to explalin line 74:
 ```r
 Nout[i,] <- A%*%Nout[i-1,]
 ```
@@ -40,7 +42,8 @@ and think about how the seeds column in `Nout` compares to the `surv_seed`s and 
 
 P2. In the previous question, I showed how you might calculate the long-term average population growth rate 
 from the simulated population time series. But for a deterministic matrix population model (no temporal fluctuations), 
-you don't need to simulate anything. The long-term population growth rate is simply the dominant eigenvalue of the matrix. You can calculate that with one short line of code (line 88):
+you don't need to simulate anything. The long-term population growth rate is simply the dominant eigenvalue of the matrix. 
+You can calculate that with one short line of code (line 88):
 ```r
 growthrate <- eigen(A)$values[1]
 print(paste0("r=",log(growthrate)))

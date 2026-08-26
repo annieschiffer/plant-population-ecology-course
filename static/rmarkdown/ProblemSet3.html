@@ -360,7 +360,7 @@ growth</h1>
 <p>This problem set re-writes the annual plant model from Week 2 as a
 matrix population model representing two life stage: seeds and plants.
 Doing this makes it possible to turn our model of an annual plant with a
-seed abnk into a model of a perennial plant with a seedbank.</p>
+seedbank into a model of a perennial plant with a seedbank.</p>
 </div>
 <div id="getting-started" class="section level2">
 <h2>Getting started</h2>
@@ -386,10 +386,11 @@ print(paste0(&quot;r=&quot;,little_r))</code></pre>
 <pre class="r"><code>r_t &lt;- log(rowSums(Nout)[2:timesteps]) - log(rowSums(Nout)[1:(timesteps-1)])
 print(paste0(&quot;r=&quot;,mean(r_t)))</code></pre>
 <p>What is the critical biological difference between these models that
-I did not anticipate? Hint: Look at the population sizes (and annual
-growth rates?) for the first few time steps of each simulation (try
-<code>head(Nout)</code>) and/or compare the time series figures (lines
-49-51 vs. 78).</p>
+I did not anticipate? Hint: Look at the transition from seeds to plants
+in the first few time steps (try <code>head(Nout)</code>) and think
+about how the seeds column in <code>Nout</code> compares to the
+<code>surv_seed</code>s and <code>new_seeds</code> columns in
+<code>Nmatrix</code>.</p>
 <p>P2. In the previous question, I showed how you might calculate the
 long-term average population growth rate from the simulated population
 time series. But for a deterministic matrix population model (no
@@ -403,13 +404,16 @@ print(paste0(&quot;r=&quot;,log(growthrate)))</code></pre>
 comparison with the numerical approach I used on lines 84-85. However,
 as I’ve written these lines of code, the growth rates are close but not
 identical. Please explain why they are not identical and how you could
-modify line 84 to make them identical. Hint: Consider how the stable
-stage distribution changes over time (line 92).</p>
-<p>P3. This is the hard one: Please modify the code to add a third life
-stage. Instead of seeds and reproductive plants, we will have seeds, a
-vegetative plant stage, and a reproductive plant stage. Your answer to
-this question will be the block of code that implements this three stage
-model.</p>
+modify line 84 to make them identical. This is a technical question
+about how to compute the average growth rate, not a question about
+ecology. Hint: Consider the stage distribution, which is the proportion
+of the population in each stage if you ran the model indefinitely. How
+does the stage distribution change over time (line 92)? When does the
+population converge on a stable stage distribution?</p>
+<p>P3. Please modify the code to add a third life stage. Instead of
+seeds and reproductive plants, we will have seeds, a vegetative plant
+stage, and a reproductive plant stage. Your answer to this question will
+be the block of code that implements this three stage model.</p>
 </div>
 
 
