@@ -14,7 +14,7 @@ weight: 20
 **September 3**
 
 * Intro to R
-* Start on lab: [Problem Set 1](/rmarkdown/ProblemSet1.html) and [R script](/rmarkdown/01_DI_growth.R)
+* Start on lab: [Problem Set 1](/rmarkdown/ProblemSet1.md) and [R script](/rmarkdown/01_DI_growth.R)
 
 ---
 
@@ -29,7 +29,7 @@ weight: 20
 
 **September 10**
 
-* Lab: [Problem Set 2](/rmarkdown/ProblemSet2.html) and [R script](/rmarkdown/02_DI_seedbank_growth.R)
+* Lab: [Problem Set 2](/rmarkdown/ProblemSet2.md) and [R script](/rmarkdown/02_DI_seedbank_growth.R)
 
 ---
 
@@ -44,7 +44,7 @@ weight: 20
 
 **September 17**
 
-* Lab: [Problem Set 3](/rmarkdown/ProblemSet3.html) and [Rscript](/rmarkdown/03_DI_stagestructured_growth.R)
+* Lab: [Problem Set 3](/rmarkdown/ProblemSet3.md) and [Rscript](/rmarkdown/03_DI_stagestructured_growth.R)
 
 **September 22**
 
@@ -55,7 +55,7 @@ weight: 20
 
 **September 24**
 
-* Lab: [Problem Set 4](/rmarkdown/ProblemSet4.html) and [Rscript](/rmarkdown/04_sensitivity&elasticity.R)
+* Lab: [Problem Set 4](/rmarkdown/ProblemSet4.md) and [Rscript](/rmarkdown/04_sensitivity&elasticity.R)
 
 ---
 
@@ -171,13 +171,13 @@ weight: 20
 * DUE: Problem Set 10
 * Lecture on conservation of rare populations
 
----
-
-***Biological invasions***
-
 **November 19**
 * Intro to final projects
 * Work on final projects
+
+---
+
+***Biological invasions***
 
 **November 25**
 
