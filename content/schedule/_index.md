@@ -4,6 +4,8 @@ title: "Schedule"
 weight: 20
 ---
 
+***Introduction***
+
 **September 1**
 
 * Course introduction
@@ -13,6 +15,10 @@ weight: 20
 
 * Intro to R
 * Start on lab: [Problem Set 1](/rmarkdown/ProblemSet1.html) and [R script](/rmarkdown/01_DI_growth.R)
+
+---
+
+***Population growth in a variable environment***
 
 **September 8**
 
@@ -24,6 +30,10 @@ weight: 20
 **September 10**
 
 * Lab: [Problem Set 2](/rmarkdown/ProblemSet2.html) and [R script](/rmarkdown/02_DI_seedbank_growth.R)
+
+---
+
+***Life history theory and quantitative methods***
 
 **September 15**
 
@@ -45,7 +55,11 @@ weight: 20
 
 **September 24**
 
-* Lab: Problem Set 4
+* Lab: [Problem Set 4](/rmarkdown/ProblemSet4.html) and [Rscript](/rmarkdown/04_sensitivity&elasticity.R)
+
+---
+
+***Density dependence***
 
 **September 29**
 
@@ -58,6 +72,11 @@ weight: 20
 
 * Lab: Problem Set 5
 
+---
+
+***Interspecific competition***
+
+
 **October 6**
 
 * DUE: Problem Set 5
@@ -66,6 +85,10 @@ weight: 20
 **October 8**
 
 * Lab: Problem Set 6
+
+---
+
+***Coexistence***
 
 **October 13**
 
@@ -76,6 +99,10 @@ weight: 20
 **October 15**
 
 * Lab: keep working on Problem Set 6
+
+---
+
+***Herbivory, predation and disease***
 
 **October 20**
 
@@ -88,6 +115,10 @@ weight: 20
 
 * Lab: Problem Set 7
 
+---
+
+***Positive species interactions***
+
 **October 27**
 
 * DUE: read
@@ -98,6 +129,10 @@ weight: 20
 **October 29**
 
 * Lab: Problem Set 8
+
+---
+
+***Metapopulation dynamics***
 
 **November 3**
 
@@ -110,6 +145,10 @@ weight: 20
 
 * Lab: Problem Set 9
 
+---
+
+***Local adaptation***
+
 **November 10**
 
 * DUE: read
@@ -121,6 +160,10 @@ weight: 20
 
 * Lab: Problem Set 10
 
+---
+
+***Conservation***
+
 **November 17**
 
 * DUE: read 
@@ -128,8 +171,11 @@ weight: 20
 * DUE: Problem Set 10
 * Lecture on conservation of rare populations
 
-**November 19**
+---
 
+***Biological invasions***
+
+**November 19**
 * Intro to final projects
 * Work on final projects
 
@@ -143,6 +189,10 @@ weight: 20
 
 Happy Thanksgiving!
 
+---
+
+***Adaptive management***
+
 **December 1**
 
 * DUE: read
@@ -152,6 +202,10 @@ Happy Thanksgiving!
 **December 3**
 
 * Work on final projects
+
+---
+
+***Final projects!***
 
 **December 8**
 
