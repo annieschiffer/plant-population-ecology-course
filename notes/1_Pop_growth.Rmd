@@ -16,8 +16,6 @@ setwd(dirname(current_path)) # set working directory to location of this file
 2. Plot population sizes over time wiht different growth rates
 3. Model a population with discrete and continuous time
 
-## Factors influencing population size
-
 *in most basic from, population size is determined by births, deaths, immigration, and emigration*
 
 ![](./population_box.png)
@@ -27,13 +25,11 @@ setwd(dirname(current_path)) # set working directory to location of this file
 *we are most interested in population dynamics over time*
 
 * understand causes of variation
-* predict population sizes across space and time *what sort of data do we need to do this?*
-* data: time series *most basic is tracking population sizes over time*
-
-*model depends on how we are measuring time*
+* predict population sizes across space and time
 
 ## Terminology and variables in population models
 
+* data: time series *tracking population sizes over time*
 * discrete time - divide into time steps (e.g. year), difference equation
 * continuous time - differential equation
 
@@ -41,22 +37,13 @@ setwd(dirname(current_path)) # set working directory to location of this file
 
 *relate to Kezia's statistics class- geometric distribution for discrete response variables, exponential distribution for continuous response variables, but very similar*
 
+### Discrete time
+
 * N = population size
 * t = time 
-* per capita = per individual
-
 * $N_t$ = population at t 
-
-*$N_{t+1}$ is size in next year*
-
-* $\lambda$ = per capita growth rate (discrete, geometric)
-
-* dN/dt = rate of change in population size
-* r = intrinsic growth rate (continuous, exponential)
-
-## Models
-
-### Discrete time with geometric growth
+* $N_{t+1}$ is size in next year*
+* $\lambda$ = per capita *per individual* growth rate
 
 $$ N_{t+1} = \lambda N_t $$
 
@@ -66,7 +53,7 @@ $$ N_{t+1} = \lambda N_t $$
 
 *we can rearrange this equation so we get population at any t*
 
-$$ N_T = N_0\lambda^T $$
+$$ N_t = N_0\lambda^t $$
 
 *$N_0$ is initial population size*
 
@@ -76,25 +63,30 @@ $$ N_T = N_0\lambda^T $$
 
 ### Continuous time with exponential growth
 
+* N
+* t
+* dN/dt = rate of change in population size
+* r = intrinsic growth rate (continuous, exponential)
+
 $$ \frac{dN}{dt} = rN(t) $$
 
 * r = 0, change in population size is 0
 * -r, population decline
 * +r, population growth
 
-$$ N(T) = N(0)e^{rT} $$
+$$ N(t) = N(0)e^{rt} $$
 
 ![](./continuous_pop.png)
 
 *in real populations, births, deaths, immigration, emigration aren't constant*
 
-*so population sizes over time aren't nice continuous*
+*so population sizes over time aren't nice and continuous*
 
 ## Demographic stochasticity
 
 * variation due to chance events affecting individuals
-* birth/death rates in diagram are an average
-* model: per capita growth rate comes from a distribution *e.g. lambda is uniform distribution between 0.5 and 1.5*
+* birth and death rates are an average
+* per capita growth rate comes from a distribution *e.g. lambda is uniform distribution between 0.5 and 1.5*
 * increases extinction risk in small populations *because if by chance reproductive individuals have few offspring for a few years, population could go extinct*
 
 ### Geometric vs. arithmetic growth
@@ -105,6 +97,5 @@ $$ N(T) = N(0)e^{rT} $$
 
 *exponential-looking relationship makes it confusing when we're trying to get population growth rate*
 
-* average population growth rate = mean(LOG($\lambda$))
-* geometric mean
+* average population growth rate = mean(log($\lambda$)) = geometric mean
 * log(mean($\lambda$)) = arithmetic mean *can overestimate population growth*
