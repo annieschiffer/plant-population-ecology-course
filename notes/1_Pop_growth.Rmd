@@ -61,6 +61,10 @@ $$ N_t = N_0\lambda^t $$
 
 ![](./discrete_pop.png)
 
+*if we log the y axis, this relationship becomes linear*
+
+![](./pop_growth_t_logN.png)
+
 ### Continuous time with exponential growth
 
 * N
@@ -73,6 +77,7 @@ $$ \frac{dN}{dt} = rN(t) $$
 * r = 0, change in population size is 0
 * -r, population decline
 * +r, population growth
+* $\log(\lambda)$ = r *you may see r with discrete time models, so this is the relationship*
 
 $$ N(t) = N(0)e^{rt} $$
 
@@ -86,10 +91,12 @@ $$ N(t) = N(0)e^{rt} $$
 
 * variation due to chance events affecting individuals
 * birth and death rates are an average
+* individual births and deaths can't be fractions *when applied to a population of 5, death rate of 0.5 is average, not 2.5 individuals survive*
 * per capita growth rate comes from a distribution *e.g. lambda is uniform distribution between 0.5 and 1.5*
 * increases extinction risk in small populations *because if by chance reproductive individuals have few offspring for a few years, population could go extinct*
+* can ignore in large populations
 
-### Geometric vs. arithmetic growth
+## Geometric vs. arithmetic growth
 
 *given that lambda fluctuates year to year, what if you wanted to get the average population growth rate?*
 
@@ -99,3 +106,5 @@ $$ N(t) = N(0)e^{rt} $$
 
 * average population growth rate = mean(log($\lambda$)) = geometric mean
 * log(mean($\lambda$)) = arithmetic mean *can overestimate population growth*
+* consideration for time but not space *ask for guesses about why this is the case?*
+* compounding: annual growth multiples the population from previous year *multiplicative growth not additive growth*

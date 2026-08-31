@@ -1,0 +1,15 @@
+---
+title: "Discussion questions: Childs et al. 2010 and Cohen 1966"
+output: html_document
+---
+
+Childs et al. 2010
+
+* Is conservative or diversified bet-hedging more intuitive to you? Why?
+* Demographic buffering is when certain vital rates vary while others stay stable in environmentally variable environments, resulting in relatively stable population growth from year to year. Can you think of any examples of this?
+* Species "spread the risk" and germinate in different years by varying their characteristics or sensitivity to microenvironments - do you see evidence of this in your own system or in seemingly homogeneous environments (like greenhouses)?
+
+Cohen 1966
+
+* If germination rates and fecundity per individual is high, why is seed survival in the seed bank less important?
+* When seed mortality is high, it's important that germinated seeds always reproduce. In what environments or conditions might seed mortality be high vs. low?
