@@ -18,15 +18,9 @@ setwd(dirname(current_path)) # set working directory to location of this file
 
 *last lecture: unrestricted population growth*
 
-*modeled demographic stocahsticity by making lambda continuous random variable*
+*modeled environmental stocahsticity by making lambda vary from year to year*
 
-*this is a workaround for modeling dynamics where temporal variable affects rates*
-
-## Temporal environmental variability
-
-* example: climate
-* $\lambda$ > 1 in wet years
-* $\lambda$ < 1 in dry years
+*this is a workaround for measuring and modeling actual environmental variables*
 
 ## Spatial environmental variability
 
@@ -34,50 +28,55 @@ setwd(dirname(current_path)) # set working directory to location of this file
 
 * example: light & understory species
 * $\lambda$ varies in space
+* accumulation in good patches
 * lattice models, cells affect population growth
 
 *draw 4x4 lattice, random patches and plants*
 
 *lambda=0.9 or 1.1 to indicate where populations growing and shrinking*
 
-## Bet-hedging
+## Temporal environmental variability
 
-* variability is a selective agent
-* populations vary sensitivity to environmental variability
+* example: climate
+* $\lambda$ > 1 in wet years
+* $\lambda$ < 1 in dry years
 
-*go back to modeling lambda as continuous random variable*
+*species can avoid bad patches by dispersing into good patches - how might a species avoid bad years?*
 
-Population 1:
+## Bet-hedging and seed banks
 
-$$ \lambda_1 \sim Normal(\mu = 2.2, \sigma = 0.8) $$
+*temporal analog to dealing with bad years*
 
-Population 2:
+* evolve to cope with environmental variability *in other words, variability is a selective agent*
+* bet-hedging: lower variation in fitness, but lower overall fitness *growth*
+* mechanism: seed banks
+* low germination rate: more seeds in seed bank, spread risk *some seeds in reserve in case its a bad year to germinate*
+* high germination rate: fewer seeds in seed bank, risky
 
-$$ \lambda_2 \sim Normal(\mu = 2, \sigma = 1.2) $$
+*similar to gambling, if plants make small bets, keeping most chips (seeds) in reserve, less risky; if you make large bets, more risky, and it might pay out (like in a good year) or you might lose everything (go locally extinct)* 
 
-* pop 2 is more sensitive than pop 1 *indicated by sigma*
-* at a given t, $N_1$ < $N_2$ even though $\lambda_1$ > $\lambda_2$ *if it's a "good" year*
+## Demonstration of bet-hedging
 
-*how do plants actually deal with environmental variation and do this? with seed banks*
+*bet-hedging is a good strategy in the long run*
 
-### Seed banks
+* low variance, low mean more beneficial than high variance, high mean
 
-* seed germination = sensitivity to good vs. bad years ($\sigma$)
+| Year | Population 1 | Population 2 |
+| :--- | :--- | :--- |
+| 1 | 0.2 | 0.8 |
+| 2 | 3.0 | 1.2 |
+| 3 | 0.4 | 0.9 |
+| 4 | 2.5 | 1.1 |
+| arithmetic mean | 0.42 | 0 |
+|geometric mean | -0.12 | -0.01 |
 
-*with a seed bank, favorable years seeds germinate and become adult plants, stressful years seeds germinate and die or don't germinate* 
 
-* low sensitivity: similar number of seeds germinate each year
-* high sensitivity: number depends on environmental cues, boom-bust
-* spread risk *naturally seeds will germinate in different years, even if they experience same exact environment year to year*
-
-### Modeling seed banks
+## Modeling seed banks
 
 *in lab, we'll model density independent growth with a seed bank*
 
-*still use lambda and N for per capita growth rate and population size*
-
-*here are some of the terms and a quick intro to the model*
-
+* $\lambda$ = per capita growth rate
+* N = number of seeds *for annual plant model*
 * g = germination rate *of seeds produced by adults*
 * s = survival of seeds in seed bank
 
@@ -86,5 +85,4 @@ $$ N_{t+1} = N(1-g)s + \lambda g N $$
 * includes the seeds that go into the seed bank
 * first term = seeds in seed bank
 * second term = new seeds
-
 
