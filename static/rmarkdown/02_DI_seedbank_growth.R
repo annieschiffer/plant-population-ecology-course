@@ -1,5 +1,5 @@
 
-# model density independent growth with a seedbank
+# model density dependent growth
 
 # set your working directory
 setwd("G:/My Drive/AdlerLabDocs/PlantPopEcol/code")
@@ -9,7 +9,7 @@ setwd("G:/My Drive/AdlerLabDocs/PlantPopEcol/code")
 DI_SB_growth <- function(N,g,s,fec){
   germinants <- g*N   # number of plants germinating out of the seed bank
   surv_seeds <- N*(1-g)*s  # number of ungerminated seeds that survive
-  new_seeds <- fec*germinants  # fecundity (production of new seeds)
+  new_seeds <- fec*germinants # fecundity (production of new seeds)
   total_seeds <- surv_seeds+new_seeds
   output <- c(total_seeds,germinants,surv_seeds,new_seeds)
   return(output)
