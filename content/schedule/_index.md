@@ -70,7 +70,7 @@ weight: 20
 
 **October 1**
 
-* Lab: Problem Set 5
+* Lab: [Problem Set 5](/rmarkdown/ProblemSet5.html) and [Rscript](/rmarkdown/05_density_dependence.R)
 
 ---
 
