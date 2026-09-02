@@ -41,7 +41,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Contributors and the University of Florida. This work is licensed under {license}'
+    notice: '© {year} Contributors and Utah State University. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: true
