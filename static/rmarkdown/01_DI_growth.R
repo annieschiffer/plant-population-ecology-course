@@ -14,7 +14,7 @@ DI_growth <- function(N,lambda){
 ### set parameters ------------------------------------------
 
 lambda_mu <- 1.2 # mean fecundity (must be > 0)
-lambda_sigma <- 0.2 # year-to-year standard deviation of fecundity (must be >= 0)
+lambda_sigma <- 0 # year-to-year standard deviation of fecundity (must be >= 0)
 
 ### set-up simulation ------------------------------------------
 
@@ -32,10 +32,17 @@ for(i in 2:timesteps){
 
 ### plot results ------------------------------------------
 
-# # plot on raw (arithmetic) scale
-# plot(Nvec,type="l",xlab="Time",ylab="Population size")
-# 
-# # plot on log scale
-# plot(log(Nvec),type="l",xlab="Time",ylab="(log) Population size")
+# plot on raw (arithmetic) scale
+plot(Nvec,type="l",xlab="Time",ylab="Population size")
+
+# plot on log scale
+plot(log(Nvec),type="l",xlab="Time",ylab="(log) Population size")
+
+### fit regression of population size over time------------------------------------------
+
+time <- 1:timesteps
+myReg <- lm(log(Nvec) ~ time)
+(coef(myReg))
+(log(lambda_mu))
 
 
