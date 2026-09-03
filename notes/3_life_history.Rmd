@@ -13,6 +13,8 @@ current_path <- getActiveDocumentContext()$path
 #setwd(dirname(current_path)) # set working directory to location of this file
 ```
 
+**switch back to introduce tradeoffs first?**
+
 ## Learning objectives
 
 1. Know the terms and methods for analyzing structured populations

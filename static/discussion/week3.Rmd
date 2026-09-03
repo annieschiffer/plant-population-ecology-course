@@ -1,0 +1,10 @@
+---
+title: "week3"
+output: html_document
+---
+
+Silvertown et al. 1993
+
+* Where do you think your study organism falls in the growth-survival-fecundity triangle? What is the biggest contributor to population growth?
+* The relative importance (or contribution) of survival, growth, and fecundity can depend on whether the population is growing, declining, or constant. They found that fecundity is less important when the population declining. Do you think survival and/or growth would become more or less important if a population is declining? Why?
+* We'll talk about sensitivity and elasticity analyses more next week, but elasticity analyses are more about identifying the relative contribution of vital rates to population growth, while sensitivity analyses are about measuring absolute changes in population growth from absolute changes in vital rates. If you have a population of plants and you supplemented fecundity by sowing seeds (or reduced survival with herbicide) then measured population growth for the next few years, is that a sensitivity or elasticity analysis? When might the different analyses be useful?

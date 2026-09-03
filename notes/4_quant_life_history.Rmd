@@ -24,8 +24,6 @@ current_path <- getActiveDocumentContext()$path
 
 ## Tradeoffs
 
-*limited amount of energy and resources - need to decide how to allocate to growth, survival, reproduction*
-
 *most basic tradeoff is the r-K theory*
 
 ### r-K
@@ -39,6 +37,10 @@ current_path <- getActiveDocumentContext()$path
 * growth, stasis, fecundity
 
 ![](./demo_triangle.png)
+
+*why can't you maximize growth, survival, and reproduction?*
+
+*limited amount of energy and resources - need to decide how to allocate to growth, survival, reproduction*
 
 * can't optimize all three
 
@@ -74,6 +76,7 @@ leslie.mat %*% N.mat
 
 * quantify influence of vital rates on $\lambda$
 * proportional change in growth rate
+* relative importance/contribution of vital rates
 
 *not absolute change in population growth rate, use sensitivity analysis for that*
 
@@ -81,5 +84,6 @@ leslie.mat %*% N.mat
 
 *let's say you could actually improve the survival of the population. Sensitivity analysis tells you how much the population growth rate would increase if you increased survival rate*
 
+* absolute change in $\lambda$ with change in vital rates
 * stage/age specific *increase survival of adults, juveniles, etc*
 * repeatedly compute population growth rate
