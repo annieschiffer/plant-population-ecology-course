@@ -13,13 +13,12 @@ current_path <- getActiveDocumentContext()$path
 #setwd(dirname(current_path)) # set working directory to location of this file
 ```
 
-**switch back to introduce tradeoffs first?**
 
 ## Learning objectives
 
-1. Know the terms and methods for analyzing structured populations
-2. Convert life history information into a Leslie matrix
-3. Get population growth rate from a Leslie matrix
+1. Know the terms and reasons for analyzing structured populations
+2. Convert life history information into a matrix for a stage-structured population
+3. Get population growth rate from a matrix
 
 *Review of last lecture: environmental variability and how to deal with that*
 
@@ -27,48 +26,105 @@ current_path <- getActiveDocumentContext()$path
 
 *assumed all individuals are same - in reality, different stages & ages within population*
 
-## Population structure
+*Silvertown talked about tradeoffs between growth, survival and fecundity, we'll talk about this more next week*
+
+*built his analyses with structured population models, so introducing that first this week*
+
+## Structured populations
+
+* structured populations: accounting for stage or age of individuals *stage examples: seeds, vegetative, reproductive*
+
+*question: any ideas why it might be useful to incorporate this information for a population?*
+
+* differences in mortality more realistic
+
+*example: differences in mortality, seedlings die in frost, reproductive adults don't*
+
+* individual stages - consequences for population dynamics 
+
+*population growth in a population of only seedlings will look different than in population of older adults*
 
 ### Terminology
 
-* demography - structured populations
-* vital rates - describe each stage *germination, survival to reproduction, fecundity*
+* demography - study of structured populations
+* vital/demographic rates - germination, survival, fecundity *rates that describe each stage*
+
+*vital & demographic used interchangably*
+
 * age and stage *related but useful in different circumstances*
-* stable stage distribution - proportion of individuals in each age/stage *even as total population size varies*
+* stable age/stage distribution - proportion of individuals in each age/stage 
 
-*stage examples: seeds, vegetative, reproductive*
+## Matrix population models
 
-### Why care about population structure?
+*let's say we have a plant with 3 stages: seed, seedling, and adult*
 
-* more realistic *that births and deaths are age/stage structured*
+*we're interested in getting germination rates, survival rates, fecundity*
 
-*example: seedlings die in frost, reproductive adults don't*
+*question: any ideas how might we actually collect that data in a real population with a bunch of individuals in seed, seedling, adult stage?*
 
-* different stages, different pressures *seeds-soil conditions, adults-competition*
-* compare individuals within stage
+* data collection: counts in each stage, tracking individuals
+* rates of transition between each stage
 
-## Modeling life history stages
+*no seed bank, all seeds are coming from adults in previous year*
 
-*let's say we have a plant with 3 ages: seed (0), seedling (not reproductive) (1), and adult (2)*
+| Year | seeds | seedlings | adults |
+| :----: | :----: | :----: | :----: |
+| 1 | 10 | 10 | 10 |
+| 2 | 40 | 1 + 2 | 8 + 3 | 
 
-*seeds are in a seed bank*
+*in year one, we tag seeds, seedlings, and adults, and measure fecundity of adults*
 
-## Leslie matrix
+*in year two, we have seeds from last year's adults, 1 previously tagged seedling, 2 new seedlings, 8 previously tagged adults, 3 new adults*
 
-* quantify and analyze structured populations
-* inputs: abundance, probability of transition to next stage, and fecundity
-* calculate population growth rate and project abundance in each age 
+*quick aside: has this population reached its stable stage distribution? in other words, are the percentages of seeds, seedlings, and adults consistent from one year to the next?*
 
-*let's make an age-structured life table*
+| Year | seeds | seedlings | adults |
+| :----: | :----: | :----: | :----: |
+| 1 | 33% | 33% | 33% |
+| 2 | 74% | 6% | 20% | 
 
-| Age | Description | Number Alive | Survival to Next Stage | Fecundity |
-| ----- | ----------- | ----------------: | --------------------------: | -------------: |
-| 0     | Seed        |              1000 |                        0.20 |              0 |
-| 1     | Seedling    |               200 |                        0.25 |              0 |
-| 2     | Adult       |                50 |                           — |            100 |
+* initial population =/= long term dynamics
+* transient period
+* number of individuals not constant, proportion in each stage constant
+
+*returning to matrix population model*
+
+*this information from 1 year transition is all we need to create a matrix population model, assuming stable stage distribution*
+
+* each column = stage
+* column 1 = rates from seeds to seeds/seedlings/adults
+* column 2 = seedlings to seeds/seedlings/adults
+* column 3 = adults
+* adults to seeds is fecundity
+
+```{r}
+stage <- c(0,0.2,0,0,0.1,0.3,4,0,0.8)
+matrix(stage,nrow=3,ncol=3)
+```
+
+*label columns & rows*
+
+*can think of 0s as percentage of one stage going to others*
+
+*for example, [3,1] is 0 because no seeds are going straight to adults*
+
+*[1,2] is 0 because no seedlings are going back to seeds*
+
+### Calculating $\lambda$
+
+*use linear algebra, not going to get into that, just some definitions*
+
+* eigenvalue = a scalar used in matrix multiplication
+* several eigenvalues for a given matrix *i.e. several scalars can work when doing this transformation/matrix multiplication*
+* largest, positive eigenvalue of matrix = $\lambda$ = population growth rate
+
+*really easy to do in R, will do in lab*
+
+## (maybe skip) Age-structured populations: Leslie matrix
 
 *let's put this in the leslie matrix format*
 
+* key difference: can't stay in an age *like you can in a stage*
 * fecundity in first row
 * each age is a column
 * survival to next stage on the diagonal
@@ -78,30 +134,3 @@ leslie <- c(0,0.2,0,0,0,0.25,100,0,0)
 matrix(leslie,nrow=3,ncol=3)
 ```
 
-*can think of 0s as percentage of one stage going to others*
-
-*for example, [3,1] is 0 because no seeds are going straight to adults*
-
-*[2,2] is 0 because no seedlings are going back to seeds*
-
-### Calculating $\lambda$
-
-*use linear algebra, not going to get into that, just some definitions*
-
-* eigenvalue = a scalar used in matrix multiplication
-* several eigenvalues for a given matrix *i.e. several scalars can work when doing this transformation/matrix multiplication*
-* largest, positive eigenvalue of a Leslie matrix *dominant - largest, positive* = $\lambda$ = population growth rate
-
-*really easy to do in R, will do in lab*
-
-### (maybe skip) Example of stage-structured population
-
-* each column = stage *same as Leslie matrix*
-* column 1 = rates from seeds to seeds/seedlings/adults
-* column 2 = rates from seedlings to seeds/seedlings/adults
-* adults to seeds is fecundity
-
-```{r}
-stage <- c(0,0.2,0,0,0.1,0.3,50,0,0.8)
-matrix(stage,nrow=3,ncol=3)
-```

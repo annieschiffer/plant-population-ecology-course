@@ -1,9 +1,7 @@
 ---
-title: "week3"
+title: "Discussion questions: Silvertown et al. 1993"
 output: html_document
 ---
-
-Silvertown et al. 1993
 
 * Where do you think your study organism falls in the growth-survival-fecundity triangle? What is the biggest contributor to population growth?
 * The relative importance (or contribution) of survival, growth, and fecundity can depend on whether the population is growing, declining, or constant. They found that fecundity is less important when the population declining. Do you think survival and/or growth would become more or less important if a population is declining? Why?
