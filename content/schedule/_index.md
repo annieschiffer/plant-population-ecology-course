@@ -38,7 +38,7 @@ weight: 20
 **September 15**
 
 * DUE: read [Silvertown et al. 1993](https://doi.org/10.2307/2261525)
-  + Discussion questions
+  + [Discussion questions](/discussion/week3.html)
 * DUE: Problem Set 2
 * Lecture on life history theory
 
@@ -49,7 +49,7 @@ weight: 20
 **September 22**
 
 * DUE: read [Salguero-Gomez et al. 2015](https://www.pnas.org/doi/10.1073/pnas.1506215112)
-  + Discussion questions
+  + [Discussion questions](/discussion/week4.html)
 * DUE: Problem Set 3
 * Lecture on analyzing life history
 

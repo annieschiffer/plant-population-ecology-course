@@ -1,0 +1,9 @@
+---
+title: "Discussion questions: Salguero-Gomez et al. 2015"
+output: html_document
+---
+
+* Have you heard of a PCA before? Any questions about what it is or how it works?
+* This study didn't find a strong phylogenetic signal in their results. This means that closely related plants don't necessarily have similar life history strategies. Any ideas why phylogenetic relatedness might not explain much?
+* In the Silvertown paper, forest herbs, woody plants, and semelparous (reproducing only once) perennial plants fall in different areas of the demographic triangle, indicating little overlap in life history strategy. But this study found overlap in strategy regardless of growth form. Does it surprise you that plants with different growth forms (e.g. trees, shrubs, herbs) have similar life history strategies? Why might this study find overlap while Silvertown mostly didn't?
+* In the middle of the PCA in Figure 3B, we see species that have similar life history strategies, but some are declining populations (in blue) and some are growing populations (in red). If these species are similar in strategy, why might their population growth rates differ?
