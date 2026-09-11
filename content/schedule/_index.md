@@ -84,7 +84,8 @@ weight: 20
 
 **October 8**
 
-* Lab: [Problem Set 6](/rmarkdown/ProblemSet6.html) and [Rscript](/rmarkdown/06_competition.R) and [Rscript](/rmarkdown/06_competition_g_varies.R)
+* Lab: [Problem Set 6](/rmarkdown/ProblemSet6.html) and the main [R script](/rmarkdown/06_competition.R) and a 
+second [R script](/rmarkdown/06_competition_g_varies.R) for the very last problem.
 
 ---
 
