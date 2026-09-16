@@ -17,73 +17,125 @@ current_path <- getActiveDocumentContext()$path
 1. Understand how and why growth, survival, and fecundity trade off
 2. Do sensitivity and elasticity analyses
 
-*review of last lecture: life tables and structured populations. How do we compare species with different life history strategies?*
+*review of last lecture: life tables and structured populations*
 
-*analyze structured populations by manipulating elements of the matrix (vital rates)*
+*in Silvertown discussion, talked about where species fall in demographic triangle*
+
+*this week: talk a bit more about plant strategies & analyzing structured populations by manipulating elements of the matrix (vital rates)*
 
 
 ## Tradeoffs
+
+*you can't maximize growth, survival, and reproduction*
+
+*limited amount of energy and resources - need to decide how to allocate*
+
+*leads to common life history strategies, tradeoffs between vital rates*
 
 *most basic tradeoff is the r-K theory*
 
 ### r-K
 
-* r species - fast growth *r*, many offspring, low investment
-* K species - slow growth, near carrying capacity, few offspring, high investment
-* **caveats** - binary instead of spectrum, generalization *example, trees like oaks that are long-lived but produce loads of acorns with low investment per acorn defy this theory*
+* 2 strategies, can be a spectrum
+* r species - fast intrinsic growth *r*, many offspring, low investment
+* K species - slow growth, near carrying capacity *K*, few offspring, high investment
+
+*question: what environments might favor a species closer to r vs. K?*
+
+* **caveat** - oversimplified *example, trees like oaks that are long-lived but produce loads of acorns with low investment per acorn defy this theory*
+
 
 ### Demographic triangle
 
+* 3 strategies
 * growth, stasis, fecundity
 
 ![](./demo_triangle.png)
 
-*why can't you maximize growth, survival, and reproduction?*
+## Sensitivity analyses
 
-*limited amount of energy and resources - need to decide how to allocate to growth, survival, reproduction*
+*Sensitivity analysis tells you how much the population growth rate would increase/decrease if you increased/decreased a vital rate*
 
-* can't optimize all three
+* absolute change in $\lambda$ with change in vital rate
+* perturb specific stage/age *e.g. increase survival of adults with grazing exclosure*
+* repeatedly compute population growth rate
 
-## Analyzing structured populations
+### Demonstration
 
-### (skip this?) Population projection
-
-*we can also project the abundances of each age in a given time step*
-
-* multiply: Leslie matrix, matrix of N at t
-* product: matrix of N at t+1
-
-*quick refresher of matrix math*
-
-![](./matrix_math.jpg)
+*we're going to perturb adult survival*
 
 ```{r}
-leslie <- c(0,0.2,0,0,0,0.25,100,0,0)
-Nt <- c(1000, 200, 50)
+# population matrix model from last time
+stage <- c(0,0.2,0,0,0.1,0.3,4,0,0.8)
+stage_mat <- matrix(stage,nrow=3,ncol=3)
+stage_mat
 
-leslie.mat <- matrix(leslie,nrow=3,ncol=3)
-leslie.mat
+# new adult survival values (instead of 0.8)
+adult_survival <- seq(0.6, 1.0, by = 0.1)
 
-N.mat <- matrix(Nt,nrow=3,ncol=1)
-N.mat
+# get population growth rates from range of adult survival values
+lambda_values <- sapply(adult_survival, function(x) {
+  pert_mat <- stage_mat
+  pert_mat[3, 3] <- x
+  max(Re(eigen(pert_mat)$values))
+})
 
-leslie.mat %*% N.mat
+lambda_values
+
+# plot
+plot(adult_survival, lambda_values,
+     type = "b",
+     xlab = "Adult survival",
+     ylab = "Population growth rate (lambda)")
+abline(h = 1, lty = 2)
+
 ```
 
-### Elasticity analyses
+## Elasticity analyses
 
-*let's say you have rare plant population data. population growth rate is less than 1, declining, but you don't know why. Is it survival or reproduction issue?*
+*let's say you have rare plant population data. Population growth rate is less than 1, declining, and you're interested in figuring out what vital rate is most important for population growth*
 
 * quantify influence of vital rates on $\lambda$
-* proportional change in growth rate
 * relative importance/contribution of vital rates
+* proportional/multiplicative change in growth rate
 
-*not absolute change in population growth rate, use sensitivity analysis for that*
+### Demonstration
 
-### Sensitivity analyses
+```{r}
+stage_mat
 
-*let's say you could actually improve the survival of the population. Sensitivity analysis tells you how much the population growth rate would increase if you increased survival rate*
+elasticity <- matrix(NA, nrow = 3, ncol = 3)
 
-* absolute change in $\lambda$ with change in vital rates
-* stage/age specific *increase survival of adults, juveniles, etc*
-* repeatedly compute population growth rate
+lambda <- max(Re(eigen(stage_mat)$values))
+
+for (i in 1:nrow(stage_mat)) {
+  for (j in 1:ncol(stage_mat)) {
+    
+    pert <- 0.01
+    
+    if(i == 1 & j == 1) print(pert)
+
+    # take our original matrix, add the change to each component, IN TURN (not all at once)
+    elas_mat <- stage_mat
+    elas_mat[i, j] <- elas_mat[i, j] + pert 
+    
+    if(i == 1 & j == 1) print(elas_mat)
+    
+    # get the PROPORTIONAL change in population growth rate (divide by the change in vital rate/perturbation)
+    sensitivity <- (max(Re(eigen(elas_mat)$values)) - lambda) / pert
+    
+    if(i == 1 & j == 1) print(sensitivity)
+    
+    # computation for elasticity: have the proportional lambda change, scale by the original proportion
+    elasticity[i, j] <- (stage_mat[i, j] / lambda) * sensitivity 
+    # 0/lambda for any elements with 0
+  }
+}
+
+elasticity
+
+```
+
+
+*question: if you have a population of plants and you supplemented fecundity by sowing seeds (or reduced survival with herbicide) then measured population growth for the next few years, is that a sensitivity or elasticity analysis?*
+
