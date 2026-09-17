@@ -65,7 +65,7 @@ weight: 20
 **September 29**
 
 * DUE: read [Density Dependence and Independence](https://doi.org/10.1002/9780470015902.a0021219)
-  + Discussion questions
+  + [Discussion questions](/discussion/week5.html)
 * DUE: Problem Set 4
 * Lecture on density-dependent population growth
 
