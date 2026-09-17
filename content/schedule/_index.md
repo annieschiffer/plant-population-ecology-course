@@ -55,6 +55,7 @@ weight: 20
 
 **September 24**
 
+* DUE: Final project proposal (see Canvas for instructions) 
 * Lab: [Problem Set 4](/rmarkdown/ProblemSet4.html) and [Rscript](/rmarkdown/04_sensitivity&elasticity.R)
 
 ---
