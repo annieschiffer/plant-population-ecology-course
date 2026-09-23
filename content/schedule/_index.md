@@ -115,7 +115,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **October 22**
 
-* Lab: Problem Set 7
+* Lab: [Problem Set 67](/rmarkdown/ProblemSet7.html) and the main [R script](/rmarkdown/07_seed_predation.R)
 
 ---
 
