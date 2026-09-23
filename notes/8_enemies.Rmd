@@ -27,6 +27,10 @@ current_path <- getActiveDocumentContext()$path
 * apparency theory: aggregation is more easily detected by enemies, vulnerable to herbivores
 * enemy release hypothesis: invasive plants successful because enemies aren't present
 
+### natural enemies in different life cycles
+
+(fill in)
+
 ## Plant defense against natural enemies
 
 *life history theory - talked about tradeoffs plants make between growth, stasis, reproduction because of limited energy*
