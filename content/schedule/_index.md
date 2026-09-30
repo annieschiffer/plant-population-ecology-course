@@ -81,6 +81,8 @@ weight: 20
 **October 6**
 
 * DUE: Problem Set 5
+* DUE: read [Silvertown 2004](https://www.cell.com/action/showPdf?pii=S0169-5347%2804%2900263-0)
+  + [Discussion questions](/discussion/week6.html)
 * Lecture on interspecific competition
 
 **October 8**
@@ -95,7 +97,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 **October 13**
 
 * DUE: read [Hille Ris Lambers et al. 2012](https://doi.org/10.1146/annurev-ecolsys-110411-160411)
-  + Discussion questions
+  + [Discussion questions](/discussion/week7.html)
 * Lecture on modern coexistence theory
 
 **October 15**

@@ -1,0 +1,8 @@
+---
+title: "Discussion questions: Silvertown 2004"
+output: html_document
+---
+
+* Niche theory says that species coexist because they occupy different niches. Neutral theory says that niches don't matter that much and plant communities are a result of random processes (demographic stochasticity, random dispersal, etc.). What do you find more compelling and why?
+
+* According to Silvertown, the concept of the niche is declining in the literature and is hard to define. Do you discuss niches in your field or research area? In what context?

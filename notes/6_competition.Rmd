@@ -26,7 +26,7 @@ current_path <- getActiveDocumentContext()$path
 * outcomes:
   + competitive exclusion - one species outcompetes other species
   + coexistence - stabilize and both persist in long term *may have lower population growth or sizes compared to those without competitor, but if they persist, it's coexistence*
-  + priority effects - depends on species arrival *whichever arrives in the community first*
+  + unstable coexistence - depends on species arrival *can coexist under the right initial conditions*
 
 *given that species compete with each other, how do you get diverse communities where many species coexist?*
 
@@ -50,7 +50,7 @@ current_path <- getActiveDocumentContext()$path
 
 *species is limiting itself more than others- this makes sense because if multiple species are going to coexist, we can't have a species that has unrestricted growth, it'll just use up all the resources*
 
-* intraspecific competition > interspecific competition
+* mechanisms lead to intraspecific competition > interspecific competition
 
 ## Modeling interspecific competition
 
@@ -78,7 +78,8 @@ $$ N_{i,t+1} = \frac{\lambda N_{i,t}}{1+\alpha_{ii}N_{i,t}+\alpha_{ij}N_{j,t}} $
 *this looks like coexistence, but what if transient dynamics, decline in future?*
 
 * both species increase from low density
-* long-term average population growth rate
+* no environmental variation, need 1 time step
+* environmental variation, need to average over conditions/years
 * $log \frac{N_{t+1}}{N_t}$ > 0 for each species - coexistence, < 0 competitive exclusion
 
 
