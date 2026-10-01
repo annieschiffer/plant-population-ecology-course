@@ -96,7 +96,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **October 13**
 
-* DUE: read [Hille Ris Lambers et al. 2012](https://doi.org/10.1146/annurev-ecolsys-110411-160411)
+* DUE: read [Hille Ris Lambers et al. 2012](https://doi.org/10.1146/annurev-ecolsys-110411-160411), focusing mainly on sections 1, 2, and 4, and skimming section 3
   + [Discussion questions](/discussion/week7.html)
 * Lecture on modern coexistence theory
 

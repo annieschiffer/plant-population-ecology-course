@@ -69,13 +69,19 @@ $$ N_{i,t+1} = \frac{\lambda N_{i,t}}{1+\alpha_{ii}N_{i,t}+\alpha_{ij}N_{j,t}} $
 
 ## Invasion analyses
 
-*I said you have coexistence when both persist in long term*
+*how can we tell if species are coexisting?*
 
-*but a time series of populations alone can't tell you if there's coexistence*
+*plot1: one species goes to 0, one stabilizes*
 
-*plot example with 2 populations fluctuating over time*
+*plot2: flat lines in parallel*
+
+*plot3: stochastic lines in parallel*
+
+*plot4: alternating species with greater abundance*
 
 *this looks like coexistence, but what if transient dynamics, decline in future?*
+
+*plot5: invasion, increase from low density*
 
 * both species increase from low density
 * no environmental variation, need 1 time step

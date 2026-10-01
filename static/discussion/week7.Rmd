@@ -3,3 +3,6 @@ title: "Discussion questions: Hille Ris Lambers et al. 2012"
 output: html_document
 ---
 
+* Niche differences are things like resource partitioning and host-specific natural enemies, where a species limits itself more than its neighbors. Fitness differences are differences between species that make one a better competitor (and probably more abundant in the community) and one a worse competitor. Do you think there are strong fitness differences between your focal species and others in the community? How do your focal species and other species differentiate resource use and offset those fitness differences?
+
+* Do you prefer more mechanistic approaches for your research (e.g. using experiments to pinpoint specific reasons for a plant response) or more phenomenological approaches (e.g. using experiments or observational studies to capture net effects and general patterns)?
