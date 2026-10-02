@@ -132,7 +132,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **October 29**
 
-* Lab: Problem Set 8
+* Lab: [Problem Set 8](/rmarkdown/ProblemSet8.html) and the main [R script](/rmarkdown/08_mutualists.R)
 
 ---
 
