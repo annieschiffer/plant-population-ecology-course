@@ -20,9 +20,9 @@ current_path <- getActiveDocumentContext()$path
 
 ## Modern coexistence theory
 
-* coexistence: fitness differences, large niche differences
 * niche differences: species differences that make species limit itself more than others *processes we talked about last week*
 * fitness differences: species differences that determine outcome without niche differences *superior vs. inferior competitor*
+* coexistence: fitness differences, large niche differences
 
 *how do you keep niche differences large and fitness differences small?*
 
@@ -32,8 +32,17 @@ current_path <- getActiveDocumentContext()$path
 
 *this assumes that species have different good years and bad years, ties back to niche differentiation, but more about storing success*
 
-* relative nonlinearity - relationship between fitness and resource level not all same *in other words, not all linear, they have different shapes*
+![](./storage-effect.png)
+
+* relative nonlinearity - different relationship between fitness and resource level *or one benefits when resources variable, other when constant*
+
+![](./relative-nonlinearity.png)
+
 * fitness-density covariance - intraspecific aggregation *fitness highest where other conspecifics are, requires spatial heterogeneity*
+
+![](./fitness-density.png)
+
+* mechanisms leading to intra > inter, coexistence
 
 ## Pros and cons
 

@@ -1,0 +1,38 @@
+---
+title: "Invasions"
+output: html_document
+---
+
+# Learning objectives
+
+1. Understand the processes leading to plant invasions
+2. Know common frameworks in invasion research
+
+*last lecture: Applied concepts to rare plant populations; now applying concepts to invasive plant populations*
+
+# Invasion processes
+
+*question: Why might an invader population grow without limits?*
+
+* Life history strategy
+  + faster life history traits
+  + resource pulses
+  + open niches, functional or phylogenetic dissimilarity
+* Species interactions
+  + low biotic resistance - residents poor competitors
+  + Enemy release hypothesis - invaded communities lack the natural enemies
+* Environment
+  + Plant-soil feedbacks
+  + prioritize colonization over competition
+  + higher resource levels or empty niches caused by disturbance
+* Phenotype & genotpye
+  + quick local adaptation, invasive annuals
+  + high phenotypic plasticity
+
+# Invasion frameworks
+
+* Resistance and resilience framework
+  + Resistance: limit impacts
+  + Resilience: ability to withstand before changing structure
+  + example: sagebrush steppe and cheatgrass
+

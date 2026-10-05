@@ -1,0 +1,74 @@
+---
+title: "Dispersal and metapopulations"
+output: pdf_document
+---
+
+# Learning objectives:
+1. Understand how patchy environments can lead to source-sink dynamics
+2. Know what local dispersal is and how to model it
+3. Model occurrence in a patchy landscape
+
+*Environmental heterogeneity, including spatial, can affect population growth rate*
+
+*Connect multiple populations in a heterogeneous environment*
+
+# Patch dynamics & metapopulations
+
+* Caused by environmental heterogeneity
+* Good patches/bad patches -> source-sink dynamics
+
+*Draw lattice with patches*
+
+## Source-sink dynamics: 
+
+* Source patches: F > m *excess of seeds*
+* Sink patches: F < m
+
+*Circle plants in source patches*
+
+*these are what we call metapopulations*
+
+* metapopulations: population of populations
+
+*question: how do the metapopulations in sink patches persist? what's required so they don't go extinct?*
+
+# Dispersal
+
+* local dispersal *global dispersal - seeds can get anywhere*
+* max. dispersal distance, closer = more seeds
+* dispersal kernels - 3D distributions
+
+*Draw circle around individual plant in lattice*
+
+*Plot distance from parent with bell curve*
+
+* dispersal limitation can hinder population growth in patchy environments
+
+## Competition-colonization tradeoff
+
+* reproductive tradeoff in patchy landscapes
+* tradeoff between competitive ability and dispersal distance
+* number and traits of seeds
+
+*draw lattice, competitive species can survive in worse patches, colonizing species gets to next good patch*
+
+# Modeling
+
+if going incidence function route:
+
+* Assume seeds can get anywhere in landscape
+* Incidence: fraction of patches occupied by a plant species = J
+* Extinction events on occupied patches
+* Colonization of unoccupied patches
+
+* dJ/dt = gains colonization - losses extinction
+* C = colonization rate
+* E = extinction rate
+* 1-J is fraction of empty patches
+* J = source patches
+
+$$ \frac{dJ}{dt} = c(1-J)J - eJ $$
+
+* Equilibrium patch occupancy is when colonization rate equals extinction rate
+
+

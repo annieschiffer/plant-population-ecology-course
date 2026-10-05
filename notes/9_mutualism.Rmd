@@ -1,0 +1,59 @@
+---
+title: "Mutualism"
+output: pdf_document
+---
+
+# Learning objectives:
+
+1. Understand the costs and benefits of different mutualistic relationships
+2. Quantify positive interactions with consumer-resource model
+
+*density dependence, other plant species, and natural enemies limit population growth*
+
+*today focusing on processes that would increase population growth*
+
+# Facilitation
+
+* Interspecific, nurse plants in arid environment
+
+*Draw number of neighbors on x, individual fecundity on y, multiple lines for multiple stress levels (rain shelter, natural, supplemental rain): stress increasing, favorable decreasing; slopes highlight this change*
+
+* Intraspecific, plant-soil feedbacks
+
+*figure out plot for this*
+
+# Animal-mediated pollination
+
+* pollinators get nutrients, plants get fertilization
+* Benefits: genetic variation *outcrossing, compared to self-pollination, wind pollination*
+* Costs: dependent on animal density, cross-contamination *pollen from other plants not your own*
+
+*figure out plot for this*
+
+# Mycorrhizal fungi
+
+* Endomycorrhiza: fungi in root cells, arbuscular mycorrhiza *found in many plant taxa, others specialize*
+* Ectomycorrhiza: fungi influence root cells but not inside cell, trees and shrubs
+* fungi get carbohydrates, plants get nutrients
+* Benefits: drought tolerance, salinity tolerance, growth, increased innate immunity
+* Costs: increased carbon costs *fungi are carbon sink*
+
+# Modeling
+
+* v - visitation rate
+* h - handling time per flower
+* B - pollinator abundance
+* M - mutualism benefit, proportion
+
+$$M = \frac{v B}{1 + v h B}$$
+
+* effect on fecundity
+* fecundity increased if pollinators present
+
+$$f_{eff} = f_\mu (1 + M)$$
+
+from lab (assumes herbivore is pollinator??):
+
+$$M = \frac{p H}{1 + p h_p H}$$
+
+

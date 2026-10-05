@@ -1,0 +1,59 @@
+---
+title: "Genotype x environment interactions and local adaptation"
+output: pdf_document
+---
+
+# Learning objectives
+
+1. Understand the difference between GxE, phenotypic plasticity, and local adaptation
+2. Know how we detect each of these processes
+
+*last lecture: Introduced multiple populations but assumed all individuals in population react to environment in same way*
+
+*several ways plant responses to environment vary within a population*
+
+# Genotype x environment interactions
+
+## Phenotypic plasticity vs. GxE
+
+* Phenotypic plasticity - traits shift with environment within a genotype
+* GxE - trait or fitness shifts with environment depend on genotype *different genotypes have different responses*
+
+*Plot E x trait with different lines for different genotypes*
+
+*plot1: No slope - no phenotypic plasticity, no GxE (what we assumed prior to this)*
+
+*plot2: Parallel lines with different intercepts - plasticity without GxE*
+
+*plto3: Slopes differ but don’t cross - plasticity with variance-changing GxE*
+
+*plot4: Slopes differ and cross - plasticity with rank-changing GxE*
+
+## Methods
+
+* Common gardens - genotypes planted in same environment
+* Reaction norms - plant response to a range of environmental conditions *what we drew above*
+
+# Local adaptation
+
+*main difference between this and the others is this has to do with fitness, not trait shifts*
+
+* "adaptive" = affects fitness
+* environment -> phenotype -> fitness
+* local adaptation - fitness highest in current environment *traits adapted to local conditions*
+
+*Plot environment A & B by fitness*
+
+*Plot1: Local adaptation - a line high in A, low in B; b line high in B low in A*
+
+*plot2: One species more adapted - a line higher than B line, either increasing or decreasing between A and B*
+
+*plot3: Maladaptation - opposite of local adaptation*
+
+## Methods
+
+* Reciprocal transplant or common garden *local and non-local plants in same condition*
+* Reaction norms
+* fitness highest in original/source conditions
+
+

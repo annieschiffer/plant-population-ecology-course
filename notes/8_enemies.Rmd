@@ -16,10 +16,11 @@ current_path <- getActiveDocumentContext()$path
 
 1. Understand the role of natural enemies for maintaining diversity
 2. Explain the relationship between growth and defense and know common defense strategies
+3. Model an herbivore attacking adults and seeds
 
 *last lecture: maintaining diversity, density dependence lecture mentioned natural enemies*
 
-## Natural enemies
+## Natural enemies - remove this section?
 
 * high density - more susceptible to disease, attract herbivores and predators
 * differentiation leads to diversity *species with different natural enemies coexist because more self-limited than limited by other species*
@@ -27,9 +28,20 @@ current_path <- getActiveDocumentContext()$path
 * apparency theory: aggregation is more easily detected by enemies, vulnerable to herbivores
 * enemy release hypothesis: invasive plants successful because enemies aren't present
 
-### natural enemies in different life cycles
+### Natural enemies in different life cycles
 
-(fill in)
+*create table and add 1 example then ask for other examples*
+
+* seed in seed bank
+  + seed predators - soil invertebrates & rodents
+  + pathogens
+* seedling
+  + insect herbivores - beetles, aphids
+  + pathogens
+* reproductive adults
+  + insect herbivores
+  + grazing mammals
+  + pathogens
 
 ## Plant defense against natural enemies
 
@@ -55,22 +67,52 @@ current_path <- getActiveDocumentContext()$path
 
 ## Modeling natural enemies
 
-*consumer resource model from last time modeled consumer and resource dynamics, similar idea with modeling herbivory*
+# modeling adult herbivory
 
-* coupled plant-herbivore dynamics
-* a = attack rate *rate that a single herbivore finds and consumes plants*
-* e = conversion efficiency *rate that consumed plants converted into new herbivores*
-* H = herbivore abundance
-* m = herbivore mortality
+* model plant & herbivore pops
+* plant populations:
+  + plants: Beverton-Holt model *just density dependence*
 
-* N = plant abundance
-* K = carrying capacity
-* r = intrinsic growth rate
+$$ N_{t+1} = \frac{\lambda N_t}{1+\alpha N_t} $$
 
-$$ \frac{dN}{dt} = rN (1 - \frac{N}{K}) - aNH $$
+*now we need to add the fact that herbivores are eating adult plants and lowering the population size*
 
-$$ \frac{dH}{dt} = e (aNH) - mH $$
+  + a = attack rate *rate that a single herbivore finds and consumes plants*
+  + H = herbivore abundance
 
+$$ N_{t+1} = \frac{\lambda N_t}{1+\alpha N_t} - aN_tH_t $$
 
+* herbivore populations:
+  + b = conversion efficiency *rate that consumed plants converted into new herbivores*
+  + m = herbivore mortality
 
+$$ H_{t+1} = b (aN_tH_t) - mH_t $$
+
+*herbivore population determined by plant consumption minus mortality*
+
+# modeling seed predator
+
+*this is how you'll do it in the lab, model with seed survival, germination rate, fecundity, rather than lambda*
+
+$$P_t = \frac{f g  N_t} {1 + \alpha g N_t}$$
+
+* seed consumption:
+  + $C_t$ - seeds/plants consumed
+  + a - attack rate 
+  + h - handling time *rate that herbivore finds and processes a plant before next plant*
+  + $H_t$ - herbivore population
+
+$$C_t = \frac{a P_t H_t} {1 + a h P_t}$$
+
+Full plant model:
+
+$$N_{t+1} = s(1-g)N_t + P_t - C_t$$
+
+* seedbank + new seeds - new seeds consumed
+
+* herbivore population:
+  + $s_H$
+  + b
+
+$$H_{t+1} = s_H H_t + b C_t$$
 
