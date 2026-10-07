@@ -9,7 +9,7 @@ weight: 20
 **September 1**
 
 * Course introduction
-* Lecture on density-independent population growth
+* Lecture on density-independent population growth [notes](/notes/1_Pop_growth.pdf)
 
 **September 3**
 
@@ -25,7 +25,7 @@ weight: 20
 * DUE: read [Childs et al. 2010](https://doi.org/10.1098/rspb.2010.0707) and skim the figures and discussion of [Cohen 1966](https://doi.org/10.1016/0022-5193(66)90188-3)
   + [Discussion questions](/discussion/week2.html)
 * DUE: Problem Set 1
-* Lecture on environmental variability and bet-hedging
+* Lecture on environmental variability and bet-hedging [notes](/notes/2_env_bet-hedging.pdf)
 
 **September 10**
 
@@ -40,7 +40,7 @@ weight: 20
 * DUE: read [Silvertown et al. 1993](https://doi.org/10.2307/2261525)
   + [Discussion questions](/discussion/week3.html)
 * DUE: Problem Set 2
-* Lecture on life history theory
+* Lecture on life history theory [notes](/notes/3_life_history.pdf)
 
 **September 17**
 
@@ -51,7 +51,7 @@ weight: 20
 * DUE: read [Salguero-Gomez et al. 2015](https://www.pnas.org/doi/10.1073/pnas.1506215112)
   + [Discussion questions](/discussion/week4.html)
 * DUE: Problem Set 3
-* Lecture on analyzing life history
+* Lecture on analyzing life history [notes](/notes/4_quant_life_history.pdf)
 
 **September 24**
 
@@ -67,7 +67,7 @@ weight: 20
 * DUE: read [Density Dependence and Independence](https://doi.org/10.1002/9780470015902.a0021219)
   + [Discussion questions](/discussion/week5.html)
 * DUE: Problem Set 4
-* Lecture on density-dependent population growth
+* Lecture on density-dependent population growth [notes](/notes/5_density_depend.pdf)
 
 **October 1**
 
@@ -83,7 +83,7 @@ weight: 20
 * DUE: Problem Set 5
 * DUE: read [Silvertown 2004](https://www.cell.com/action/showPdf?pii=S0169-5347%2804%2900263-0)
   + [Discussion questions](/discussion/week6.html)
-* Lecture on interspecific competition
+* Lecture on interspecific competition [notes](/notes/6_competition.pdf)
 
 **October 8**
 
@@ -110,7 +110,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **October 20**
 
-* DUE: read 
+* DUE: read [Lind et al. 2013](https://onlinelibrary-wiley-com.dist.lib.usu.edu/doi/full/10.1111/ele.12078), also uploaded as pdf on canvas
   + Discussion questions
 * DUE: Problem Set 6
 * Lecture on herbivory, predation, and disease
@@ -125,7 +125,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **October 27**
 
-* DUE: read
+* DUE: read [Traveset and Richardson 2014](https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-120213-091857)
   + Discussion questions
 * DUE: Problem Set 7
 * Lecture on mutualism and intraspecific facilitation
@@ -140,7 +140,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **November 3**
 
-* DUE: read
+* DUE: read [Hanski 1998](https://www-nature-com.dist.lib.usu.edu/articles/23876), also uploaded as pdf on canvas
   + Discussion questions
 * DUE: Problem Set 8
 * Lecture on dispersal and metapopulations
@@ -155,7 +155,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **November 10**
 
-* DUE: read
+* DUE: read [Anderson et al. 2025](https://www.science.org/doi/pdf/10.1126/science.adr1010?referrer=https%3A%2F%2Fscholar.google.com%2F)
   + Discussion questions
 * DUE: Problem Set 9
 * Lecture on genotype x environment interactions and local adaptation
@@ -170,7 +170,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **November 17**
 
-* DUE: read 
+* DUE: read TBD
   + Discussion questions
 * DUE: Problem Set 10
 * Lecture on conservation of rare populations
@@ -185,7 +185,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **November 25**
 
-* DUE: read 
+* DUE: read [Melbourne et al. 2007](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1461-0248.2006.00987.x)
   + Discussion questions
 * Lecture on invasions
 
@@ -199,7 +199,7 @@ Happy Thanksgiving!
 
 **December 1**
 
-* DUE: read
+* DUE: read TBD
   + Discussion questions
 * Lecture on adaptive management (?)
 

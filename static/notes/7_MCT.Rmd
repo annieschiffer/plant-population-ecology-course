@@ -1,0 +1,87 @@
+---
+title: "Modern coexistence theory"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rstudioapi)
+current_path <- getActiveDocumentContext()$path 
+#setwd(dirname(current_path)) # set working directory to location of this file
+```
+
+## Learning objectives
+
+1. Know the what niche and fitness differences are and how they relate to lambda and alpha
+2. Understand the storage effect
+
+*last lecture: processes that lead to coexistence and diverse communities, general*
+
+*today, specifically talking about modern coexistence theory*
+
+## Modern coexistence theory
+
+*last week, use simulations to get invasion growth rate, which tells us about coexistence*
+
+*but we don't know why a species can or can't invade*
+
+goal: determine why species can/can't coexist
+
+1. invasion analysis
+2. partition invasion growth rates into mechanisms
+3. get invasion growth rate in different scenarios (counterfactual) and compare
+  + example: constant environment
+
+## Partitioning
+
+* niche differences: species differences that make species limit itself more than others *processes we talked about last week*
+* fitness differences: species differences that determine outcome without niche differences *superior vs. inferior competitor in constant env*
+
+$$ r = FD + ND $$
+
+* weak invader -> FD term is negative *fecundity of invader is lower than average fecundity of other species*
+* coexistence (+r): niche differences > fitness differences
+  + species A and B prefer different environments
+  + species A has average fitness advantage: 10% more seeds germinate on average
+  + species B high germination in preferred environment
+  + intra > inter, ND large
+* compare to counterfactuals -> strength of mechanisms *somewhat similar to an elasticity analysis*
+
+## Connection to Beverton-Holt
+
+* ND: $\alpha_{ii}$, $\alpha_{ij}$, $\alpha_{jj}$, $\alpha_{ji}$
+* FD: $\alpha$, $\lambda$, s, g *if have a seed bank* 
+* changes in $\alpha$'s will affect ND & FD
+* changes in fecundity will affect FD
+
+### More partitioning: storage effect
+
+* environmental fluctuations
+* both species store seeds in seed bank
+* escape competition in bad years
+
+*draw seeds in seed bank, A years, many species A, few species B*
+
+*B years, many species B, few species A*
+
+* advantage when rare
+
+*A years, A rare, really big, few species B*
+
+*B years, B rare, really big, few species A*
+
+
+# quick reference equations
+
+$$ \frac{N_{i,t+1}}{N_{i,t}} = (1-g_i)s_i + F_i $$
+
+$$ F_i = \frac{g_i \lambda_i}{1 + \alpha_{ii} g_i N_{i,t} + \alpha_{ij} g_j N_{j,t}} $$ 
+
+$$ \rho = \sqrt{\frac{\alpha_{ij}}{\alpha_{jj}} \frac{\alpha_{ji}}{\alpha_{ii}}} $$
+
+$$ \frac{K_j}{K_i} = (\frac{\eta_j - 1}{\eta_i - 1}) \sqrt{\frac{\alpha_{ij}}{\alpha_{jj}} \frac{\alpha_{ji}}{\alpha_{ii}}} $$
+
+$$ \eta_i = \frac{g_i \lambda_i}{1-(1-g_i)(s_i)} $$
+
+
+

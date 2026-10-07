@@ -3,6 +3,8 @@ title: "Discussion questions: Hille Ris Lambers et al. 2012"
 output: html_document
 ---
 
-* Niche differences are things like resource partitioning and host-specific natural enemies, where a species limits itself more than its neighbors. Fitness differences are differences between species that make one a better competitor (and probably more abundant in the community) and one a worse competitor. Do you think there are strong fitness differences between your focal species and others in the community? How do your focal species and other species differentiate resource use and offset those fitness differences?
+* Looking at figure 1, have you heard of community assembly before? Do you agree with this paradigm or are there aspects of this figure that you would change or challenge?
 
-* Do you prefer more mechanistic approaches for your research (e.g. using experiments to pinpoint specific reasons for a plant response) or more phenomenological approaches (e.g. using experiments or observational studies to capture net effects and general patterns)?
+* Invaded communities are instances where species coexistence is not occurring - fitness is much higher for the invasive species than the native species, and the invasive species excludes the native species. For those of you working on invasive species, when/where is fitness lower for invasive species (or when/where are there large enough niche differences)? For those of you not working on invasive species, do you think fitness is relatively equal across species (within the same guild)? Do you think you have coexistence between most species? 
+
+* In the beginning of section 4 the authors discuss different empirical approaches. Do you prefer more mechanistic approaches for your research (e.g. using experiments to pinpoint specific reasons for a plant response) or more phenomenological approaches (e.g. using experiments or observational studies to capture net effects and general patterns)?
