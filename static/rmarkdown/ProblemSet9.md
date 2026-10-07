@@ -1,5 +1,5 @@
 ---
-title: "Problem set 5: Density dependence"
+title: "Problem set 9: Metapopulations"
 output: html_document
 date: "2026-09-02"
 ---
