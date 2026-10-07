@@ -147,7 +147,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **November 5**
 
-* Lab: Problem Set 9
+* Lab: [Problem Set 9](/rmarkdown/ProblemSet9.html) and the main [R script](/rmarkdown/09_metapops.R)
 
 ---
 
