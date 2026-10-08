@@ -24,7 +24,7 @@ DD_2spp_growth <- function(N,g,s,fec,alpha){
 }
 
 # Define a funtion to  draw fecundities from a multivariate normal distribution.
-get_g <- function(timesteps, g_mu, vcov){
+get_g <- function(timesteps, g_mu, g_cor){
   # First we need to set up the variance-covariance matrix:
   vcov <- matrix(NA,2,2)
   diag(vcov) <- g_sigma^2
@@ -56,7 +56,7 @@ colnames(Nmatrix) <- c("spp1","spp2")
 Nmatrix[1,] <- c(1,1)  # initial population state
 
 # draw fecundities
-g <- get_g(timesteps, g_mu, vcov)
+g <- get_g(timesteps, g_mu, g_cor)
 
 ### run simulation ------------------------------------------
 
@@ -83,7 +83,7 @@ N_init <- c(1,1)     # initial population size
 N_init[invader] <- 0 # initialize the invader at 0 abundance
 
 # first, spin up the resident to equilibrium density
-g <- get_g(spin_up, g_mu, vcov)
+g <- get_g(spin_up, g_mu, g_cor)
 N_mono <- N_init  # this will become the starting density for the invasion experiment
 for(i in 2:spin_up){
   N_mono <- DD_2spp_growth(N=N_mono,g[i,],s,fec,alpha)
@@ -95,7 +95,7 @@ N_t0 <- matrix(NA,nrow=invasion_reps,ncol=2)  # matrix to store time t abundance
 N_t0[1,] <-N_mono
 N_t0[,invader] <- 1  # invader abundance
 N_t1 <- matrix(NA,nrow=invasion_reps,ncol=2)  # matrix to store time t+1 abundances
-g <- get_g(invasion_reps, g_mu, vcov)
+g <- get_g(invasion_reps, g_mu, g_cor)
 # prevent invader from affecting itself or the resident
 alpha_invade <- alpha
 alpha_invade[,invader] <- 0

@@ -24,7 +24,7 @@ DD_2spp_growth <- function(N,g,s,fec,alpha){
 }
 
 # Define a funtion to  draw fecundities from a multivariate normal distribution.
-get_fec <- function(timesteps, fec_mu, vcov){
+get_fec <- function(timesteps, fec_mu, fec_cor){
   # First we need to set up the variance-covariance matrix:
   vcov <- matrix(NA,2,2)
   diag(vcov) <- fec_sigma^2
@@ -37,8 +37,8 @@ get_fec <- function(timesteps, fec_mu, vcov){
 
 ### set parameters ------------------------------------------
 
-fec_mu <- c(30,23)      # mean fecundity (must be > 0) for species 1 and 2
-fec_sigma <- c(10,10)  # year-to-year standard deviation of fecundity (must be >= 0) for species 1 and 2
+fec_mu <- c(30,29)      # mean fecundity (must be > 0) for species 1 and 2
+fec_sigma <- c(0,0)  # year-to-year standard deviation of fecundity (must be >= 0) for species 1 and 2
 fec_cor <- -0.9           # correlation in species 1 and 2 fecundity (ranges from -1 to 1)
 g <- c(0.5,0.5)        # germination rate for species 1 and 2
 s <- c(0.8,0.8)            # survival of ungerminated seeds for species 1 and 2
@@ -53,10 +53,10 @@ alpha[2,2] <- 0.2    # effect of species 2 on itself
 timesteps <- 200  # number of time steps to simulate
 Nmatrix <- matrix(NA,nrow=timesteps,ncol=2)  # matrix to store population time series
 colnames(Nmatrix) <- c("spp1","spp2")
-Nmatrix[1,] <- c(1,2)  # initial population state
+Nmatrix[1,] <- c(2,2)  # initial population state
 
 # draw fecundities
-fec <- get_fec(timesteps, fec_mu, vcov)
+fec <- get_fec(timesteps, fec_mu, fec_cor)
 
 ### run simulation ------------------------------------------
 
@@ -85,7 +85,7 @@ N_init <- c(1,1)     # initial population size
 N_init[invader] <- 0 # initialize the invader at 0 abundance
 
 # first, spin up the resident to equilibrium density
-fec <- get_fec(spin_up, fec_mu, vcov)
+fec <- get_fec(spin_up, fec_mu, fec_cor)
 N_mono <- N_init  # this will become the starting density for the invasion experiment
 for(i in 2:spin_up){
   N_mono <- DD_2spp_growth(N=N_mono,g,s,fec[i,],alpha)
@@ -97,7 +97,7 @@ N_t0 <- matrix(NA,nrow=invasion_reps,ncol=2)  # matrix to store time t abundance
 N_t0[1,] <-N_mono
 N_t0[,invader] <- 1  # invader abundance
 N_t1 <- matrix(NA,nrow=invasion_reps,ncol=2)  # matrix to store time t+1 abundances
-fec <- get_fec(invasion_reps, fec_mu, vcov)
+fec <- get_fec(invasion_reps, fec_mu, fec_cor)
 # prevent invader from affecting itself or the resident
 alpha_invade <- alpha
 alpha_invade[,invader] <- 0
