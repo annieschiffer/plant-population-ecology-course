@@ -1,0 +1,10 @@
+---
+title: "Discussion questions: Lind et al. 2013"
+output: html_document
+---
+
+* The growth-defense tradeoff says that plants are either well-defended or grow fast. The competition-defense tradeoff says that plants are either well-defended or better nutrient competitors. Were you surprised that there was strong evidence for growth-defense and not for competition defense (Fig. 2)? Why or why not?
+
+* Thinking about coexistence and community diversity, the competition-defense tradeoff is intuitive (the stronger competitor gets eaten, allowing for the weaker competitor to persist). How might the growth-defense tradeoff maintain diversity?
+
+* If they continued adding nutrients and removing herbivores for another 10+ years and redid this analysis, how do you think the results would look? Do you think they would come to the same conclusion?

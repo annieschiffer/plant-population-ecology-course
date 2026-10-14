@@ -1,7 +1,5 @@
 ---
 title: "Herbivory, predation, disease"
-author: "Annie Schiffer"
-date: "2026-07-23"
 output: pdf_document
 ---
 
@@ -14,21 +12,43 @@ current_path <- getActiveDocumentContext()$path
 
 ## Learning objectives
 
-1. Understand the role of natural enemies for maintaining diversity
-2. Explain the relationship between growth and defense and know common defense strategies
-3. Model an herbivore attacking adults and seeds
+1. Explain the relationship between growth and defense and know common defense strategies
+2. Understand the role of natural enemies for maintaining diversity
+3. Model an herbivore attacking seeds
 
 *last lecture: maintaining diversity, density dependence lecture mentioned natural enemies*
 
-## Natural enemies - remove this section?
+## Plant defense against natural enemies
 
-* high density - more susceptible to disease, attract herbivores and predators
-* differentiation leads to diversity *species with different natural enemies coexist because more self-limited than limited by other species*
-* Janzen-Connell hypothesis: host-specific enemies reduce seedling survival in dense areas
-* apparency theory: aggregation is more easily detected by enemies, vulnerable to herbivores
-* enemy release hypothesis: invasive plants successful because enemies aren't present
+*life history theory - talked about tradeoffs plants make between growth, stasis, reproduction because of limited energy*
 
-### Natural enemies in different life cycles
+*same with defense, allocate energy to maintenance functions, growth or defense*
+
+* growth-defense tradeoff
+  + grow fast: rapid germination, low defense, higher herbivory *or predation or disease*
+  + well-protected: slow growth, high defense, lower herbivory 
+* dispersal-defense tradeoff
+  + diffuse seed dispersal: hard to locate, fewer defenses
+  + seed defense: aggregated seeds near parent, more defenses
+* attract animals *for dispersal*, deter predators *in species that require animal seed dispersers*
+
+### Defense strategies
+
+* physical: leaf toughness, spines, latex, hard seeds
+* chemical: secondary metabolites *bitter, spicy, etc*, delayed ripening, masting *local satiation*
+
+## Natural enemies in a community
+
+* 1 herbivore, 2 plants: apparent competition
+  + growth-defense tradeoff, one plant is strong competitor, other is well-defended
+  + herbivore eats both ("apparent competiton")
+  + stronger competitor suffers more
+* 2 herbivores, 2 plants: host-specific natural enemies, Janzen-Connell hypothesis
+  + reduce seedling survival in dense areas
+
+*draw two tree species, high density of recruits around trees, enemies lead to thinning*
+
+## Natural enemies in different life stages
 
 *create table and add 1 example then ask for other examples*
 
@@ -43,61 +63,18 @@ current_path <- getActiveDocumentContext()$path
   + grazing mammals
   + pathogens
 
-## Plant defense against natural enemies
-
-*life history theory - talked about tradeoffs plants make between growth, stasis, reproduction because of limited energy*
-
-*same with defense, allocate energy to maintenance functions, growth or defense*
-
-* growth-defense tradeoff
-  + grow fast: rapid germination, low defense, higher herbivory *or predation or disease*
-  + well-protected: slow growth, high defense, lower herbivory 
-
-*trading off investment of energy*
-
-* dispersal-defense tradeoff
-  + diffuse seed dispersal: hard to locate, fewer defenses
-  + seed defense: aggregated seeds near parent, more defenses
-* attract animals *for dispersal*, deter predators *in species that require animal seed dispersers*
-
-### Defense strategies
-
-* physical: leaf toughness, spines, latex, hard seeds
-* chemical: secondary metabolites *bitter, spicy, etc*, delayed ripening, masting *local satiation*
-
-## Modeling natural enemies
-
-# modeling adult herbivory
+## Modeling plant-herbivore dynamics
 
 * model plant & herbivore pops
-* plant populations:
-  + plants: Beverton-Holt model *just density dependence*
+* plants: seedbank + new seeds - new seeds consumed
+* herbivores: existing herbivores + new herbivores
 
-$$ N_{t+1} = \frac{\lambda N_t}{1+\alpha N_t} $$
-
-*now we need to add the fact that herbivores are eating adult plants and lowering the population size*
-
-  + a = attack rate *rate that a single herbivore finds and consumes plants*
-  + H = herbivore abundance
-
-$$ N_{t+1} = \frac{\lambda N_t}{1+\alpha N_t} - aN_tH_t $$
-
-* herbivore populations:
-  + b = conversion efficiency *rate that consumed plants converted into new herbivores*
-  + m = herbivore mortality
-
-$$ H_{t+1} = b (aN_tH_t) - mH_t $$
-
-*herbivore population determined by plant consumption minus mortality*
-
-# modeling seed predator
-
-*this is how you'll do it in the lab, model with seed survival, germination rate, fecundity, rather than lambda*
+* $P_t$ - new seeds
 
 $$P_t = \frac{f g  N_t} {1 + \alpha g N_t}$$
 
 * seed consumption:
-  + $C_t$ - seeds/plants consumed
+  + $C_t$ - seeds consumed
   + a - attack rate 
   + h - handling time *rate that herbivore finds and processes a plant before next plant*
   + $H_t$ - herbivore population
@@ -108,11 +85,12 @@ Full plant model:
 
 $$N_{t+1} = s(1-g)N_t + P_t - C_t$$
 
-* seedbank + new seeds - new seeds consumed
-
 * herbivore population:
-  + $s_H$
-  + b
+  + $s_H$ - herbivore survival
+  + b - conversion efficiency *rate that consumed plants converted into new herbivores*
 
 $$H_{t+1} = s_H H_t + b C_t$$
+
+## Functional responses?
+
 

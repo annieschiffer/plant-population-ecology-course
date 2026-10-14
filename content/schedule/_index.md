@@ -98,7 +98,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 * DUE: read [Hille Ris Lambers et al. 2012](https://doi.org/10.1146/annurev-ecolsys-110411-160411), focusing mainly on sections 1, 2, and 4, and skimming section 3
   + [Discussion questions](/discussion/week7.html)
-* Lecture on modern coexistence theory
+* Lecture on modern coexistence theory [notes](/notes/7_MCT.pdf)
 
 **October 15**
 
@@ -111,9 +111,9 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 **October 20**
 
 * DUE: read [Lind et al. 2013](https://onlinelibrary-wiley-com.dist.lib.usu.edu/doi/full/10.1111/ele.12078), also uploaded as pdf on canvas
-  + Discussion questions
+  + [Discussion questions](/discussion/week8.html)
 * DUE: Problem Set 6
-* Lecture on herbivory, predation, and disease
+* Lecture on herbivory, predation, and disease [notes](/notes/8_enemies.pdf)
 
 **October 22**
 
