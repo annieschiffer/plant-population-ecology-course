@@ -28,8 +28,8 @@ $P_t$, the number of newly *P*roduced seeds at time $t$, is:
 $$P_t = \frac{f g  N_t} {1 + \alpha g N_t}$$
 where $g$ is germination rate, $f$ is fecundity and $\alpha$ is density dependence.
 
-$C_t$, the number of seeds consumed by the predator, is:
-$$C_t = \frac{a B_t H_t} {1 + a h B_t}$$
+$C_t$, the number of seeds consumed by the herbivore, is:
+$$C_t = \frac{a P_t H_t} {1 + a h P_t}$$
 where $H_t$ is the seed predator population (herbivores), $a$ is the herbivore attack rate, and $h$ is the herbivore
 handling time. This consumption function is a "type II" functional response: it saturates when the number of seeds 
 grows large relative to the number of herbivores. 
