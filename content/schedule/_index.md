@@ -125,10 +125,10 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **October 27**
 
-* DUE: read [Traveset and Richardson 2014](https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-120213-091857)
-  + Discussion questions
+* DUE: read [Traveset and Richardson 2014](https://www.annualreviews.org/content/journals/10.1146/annurev-ecolsys-120213-091857); skip sections 2.2, 2.3 and 4
+  + [Discussion questions](/discussion/week9.html)
 * DUE: Problem Set 7
-* Lecture on mutualism and intraspecific facilitation
+* Lecture on mutualism and intraspecific facilitation [notes](/notes/9_mutualism.pdf)
 
 **October 29**
 

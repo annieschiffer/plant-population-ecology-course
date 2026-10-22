@@ -6,54 +6,71 @@ output: pdf_document
 # Learning objectives:
 
 1. Understand the costs and benefits of different mutualistic relationships
-2. Quantify positive interactions with consumer-resource model
+2. Incorporate positive interactions in a consumer-resource model
 
 *density dependence, other plant species, and natural enemies limit population growth*
 
 *today focusing on processes that would increase population growth*
 
+# Terminology
+
+* symbiosis: any relationship between species *broad term, can be + or -, includes parasitism*
+* mutualism: specific symbiosis, both species benefit
+* commensalism: specific symbiosis, 1 benefits, 1 neutral
+
 # Facilitation
 
 * Interspecific, nurse plants in arid environment
 
-*Draw number of neighbors on x, individual fecundity on y, multiple lines for multiple stress levels (rain shelter, natural, supplemental rain): stress increasing, favorable decreasing; slopes highlight this change*
+*Draw number of interspecific neighbors on x, individual fecundity on y, multiple lines for multiple stress levels (rain shelter, natural, supplemental rain): stress increasing, favorable decreasing; slopes highlight this change*
 
 * Intraspecific, plant-soil feedbacks
 
-*figure out plot for this*
+*could alter previous plot to intraspecific neighbors on x*
 
-# Animal-mediated pollination
+* Benefits: increased vital rates in favorable environment
+* Costs: competition for space or other resources
 
-* pollinators get nutrients, plants get fertilization
-* Benefits: genetic variation *outcrossing, compared to self-pollination, wind pollination*
-* Costs: dependent on animal density, cross-contamination *pollen from other plants not your own*
+# Pollination
 
-*figure out plot for this*
+* pollinators get nutrients, plants get fertilization/higher reproduction
+* Benefits: quality seeds, genetic variation *outcrossing, compared to self-pollination, wind pollination*
+* Costs: dependent on animal density, nectar production, cross-contamination *pollen from other plants not your own*
 
 # Mycorrhizal fungi
 
 * Endomycorrhiza: fungi in root cells, arbuscular mycorrhiza *found in many plant taxa, others specialize*
 * Ectomycorrhiza: fungi influence root cells but not inside cell, trees and shrubs
-* fungi get carbohydrates, plants get nutrients
-* Benefits: drought tolerance, salinity tolerance, growth, increased innate immunity
-* Costs: increased carbon costs *fungi are carbon sink*
+* fungi explore efficiently
+  + example: extend beyond normal root zone in crops & get farther nutrients
+  + drought resistance in tomatoes and peppers
+* fungi get carbohydrates, plants get nutrients 
+* Benefits: get nutrients or water in resource-poor environments
+* Costs: increased carbon costs *fungi take carbs from plant, so are carbon sink*
 
 # Modeling
 
-* v - visitation rate
-* h - handling time per flower
-* B - pollinator abundance
-* M - mutualism benefit, proportion
+* herbivore as pollinator - life stage-dependent 
+  + example: butterflies & moths
+  + larval/caterpillar: herbivore
+  + adults: pollinator
 
-$$M = \frac{v B}{1 + v h B}$$
+* $p$ - pollination rate
+* $h_p$ - handling time per flower
+* $H$ - insect herbivore/pollinator abundance
+* $M$ - mutualism benefit, proportion
+
+$$M = \frac{p H}{1 + p h_p H}$$
 
 * effect on fecundity
+* $f_\mu$ - mean fecundity
 * fecundity increased if pollinators present
 
 $$f_{eff} = f_\mu (1 + M)$$
 
-from lab (assumes herbivore is pollinator??):
+* affects plant pops, not herbs
+* in plant paps, affects new seeds, not seedbank or seeds consumed:
 
-$$M = \frac{p H}{1 + p h_p H}$$
+$$P_t = \frac{f_\mu g  N_t} {1 + \alpha g N_t}$$
 
 

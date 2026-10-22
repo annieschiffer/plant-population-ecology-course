@@ -1,0 +1,10 @@
+---
+title: "Discussion questions: Traveset and Richarson 2014"
+output: html_document
+---
+
+* Which parts of the paper did you like or dislike?
+
+* Which examples of mutualistic interactions were you most familiar with? Which were you unfamiliar with or surprised you?
+
+* In section 6, they mention intentional introductions of mutualists to facilitate economically important plant species (another example: adding honeybee hives to orchards). What are your thoughts on this? What do you think the implications are for native plant populations?
