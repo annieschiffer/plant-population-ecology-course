@@ -141,9 +141,9 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 **November 3**
 
 * DUE: read [Hanski 1998](https://www-nature-com.dist.lib.usu.edu/articles/23876), also uploaded as pdf on canvas
-  + Discussion questions
+  + [Discussion questions](/discussion/week10.html)
 * DUE: Problem Set 8
-* Lecture on dispersal and metapopulations
+* Lecture on dispersal and metapopulations [notes](/notes/10_dispersal.pdf)
 
 **November 5**
 

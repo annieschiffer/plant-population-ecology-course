@@ -4,71 +4,101 @@ output: pdf_document
 ---
 
 # Learning objectives:
-1. Understand how patchy environments can lead to source-sink dynamics
+1. Understand how populations persist in disturbed landscapes
 2. Know what local dispersal is and how to model it
-3. Model occurrence in a patchy landscape
+3. Build a metapopulation model that includes dispersal and disturbance
 
 *Environmental heterogeneity, including spatial, can affect population growth rate*
 
 *Connect multiple populations in a heterogeneous environment*
 
-# Patch dynamics & metapopulations
+# Patch dynamics
+
+## Source-sink dynamics: 
 
 * Caused by environmental heterogeneity
 * Good patches/bad patches -> source-sink dynamics
 
 *Draw lattice with patches*
 
-## Source-sink dynamics: 
-
 * Source patches: F > m *excess of seeds*
 * Sink patches: F < m
 
-*Circle plants in source patches*
-
-*these are what we call metapopulations*
+*Circle plants in patches*
 
 * metapopulations: population of populations
 
-*question: how do the metapopulations in sink patches persist? what's required so they don't go extinct?*
+## Disturbance:
+
+* homogeneous environment, regular disturbances
+* disturbances can affect some patches but not others
+  + example: falling tree disturbed understory, patchy fire, storms
+* seed banks to avoid periods of disturbance
+
+*question: how to avoid patchy/spatial disturbances that could wipe out a seed bank? what's required so they don't go extinct?*
 
 # Dispersal
 
-* local dispersal *global dispersal - seeds can get anywhere*
-* max. dispersal distance, closer = more seeds
+* local vs. global dispersal
+* closer to parent = more seeds
 * dispersal kernels - 3D distributions
 
 *Draw circle around individual plant in lattice*
 
 *Plot distance from parent with bell curve*
 
-* dispersal limitation can hinder population growth in patchy environments
+* types of dispersal kernels *draw each*
+  + Gaussian
+  + exponential
+  + fat-tailed
+
+* dispersal limitation - lower population growth in patchy/disturbed environments
 
 ## Competition-colonization tradeoff
 
-* reproductive tradeoff in patchy landscapes
-* tradeoff between competitive ability and dispersal distance
-* number and traits of seeds
-
-*draw lattice, competitive species can survive in worse patches, colonizing species gets to next good patch*
+* homogeneous environment, regular disturbances
+* tradeoff between competitive ability and dispersal ability
+* colonizer advantage after disturbance, competitor advantage over time
+* intermediate disturbance = highest diversity
 
 # Modeling
 
-if going incidence function route:
+$$ N_{t+1} = N_t(1-g)s + \frac{f g N_t}{1+\alpha g N_t} $$
 
-* Assume seeds can get anywhere in landscape
-* Incidence: fraction of patches occupied by a plant species = J
-* Extinction events on occupied patches
-* Colonization of unoccupied patches
+Number of seeds produced:
 
-* dJ/dt = gains colonization - losses extinction
-* C = colonization rate
-* E = extinction rate
-* 1-J is fraction of empty patches
-* J = source patches
+* $p$ - focal patch
+* $F_p$ - number of seeds produced in a given patch
+* $N_p$ - population size for a given patch
+* $f_p$ - fecundity within a patch, proportion of $f$
 
-$$ \frac{dJ}{dt} = c(1-J)J - eJ $$
+$$ F_p = \frac{f_p g N_{p,t}}{1+\alpha g N_{p,t}} $$
 
-* Equilibrium patch occupancy is when colonization rate equals extinction rate
+* $P$ - number of patches
+* $d$ - fraction of seeds that leave the patch
 
+Seeds retained in patch:
+
+$$ F_p(1 - d) $$
+
+Seeds coming in from other patches:
+
+* $j$ - all other patches aside from focal patch
+
+$$ \frac{d}{P-1}\sum_{j=1,j \neq p}^P F_j $$
+
+$$ N_{p, t+1} = N_{p,t}(1-g)s + F_p(1 - d) +  \frac{d}{P-1}\sum_{j=1,j \neq p}^P F_j $$
+
+*this all assumes a homogeneous environment (patches are all equal), so we have to add disturbance*
+
+Adding another element: disturbance
+
+* sometimes patch $p$ gets wiped out so $N_p$ = 0 
+* probability of disturbance, binomial distribution, 0 - no disturbance, 1- disturbed
+
+patch abundances at time t: $N_1$ = 20, $N_2$ = 13, $N_3$ = 8
+
+disturbance: 0, 1, 0
+
+new patch abundances at time t: $N_1$ = 20, $N_2$ = 0, $N_3$ = 8
 

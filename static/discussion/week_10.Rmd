@@ -1,0 +1,10 @@
+---
+title: "Discussion questions: Hanski 1998"
+output: html_document
+---
+
+* Looking at Figure 1, do you think about the spatial distribution of your focal organism from a theoretical, metapopulation, or landscape ecology perspective? Which of these maps appeals to you most? 
+
+* How do you think fragmented landscapes and metapopulations affect some of the other topics we've talked about (mutualisms, herbivory, competition, density dependence, seedbanks)?
+
+* Towards the end, the author talks about implications for conservation. In your opinion, how applicable is this theory to conservation? Should managers be taking advice from spatial ecologists, or are conservation priorities and approaches too system-specific?
