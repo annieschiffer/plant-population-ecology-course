@@ -156,9 +156,9 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 **November 10**
 
 * DUE: read [Anderson et al. 2025](https://www.science.org/doi/pdf/10.1126/science.adr1010?referrer=https%3A%2F%2Fscholar.google.com%2F)
-  + Discussion questions
+  + [Discussion questions](/discussion/week_11.html)
 * DUE: Problem Set 9
-* Lecture on genotype x environment interactions and local adaptation
+* Lecture on eco-evo dynamics [notes](/notes/11_GxE.pdf)
 
 **November 12**
 

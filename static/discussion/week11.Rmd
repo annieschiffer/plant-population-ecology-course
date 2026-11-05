@@ -1,0 +1,10 @@
+---
+title: "Discussion questions: Anderson et al. 2025"
+output: html_document
+---
+
+* This paper covers a lot of eco-evo dynamics (which also means there was a lot of jargon). Were there concepts that were more intuitive than others?
+
+* Were you surprised that these populations are unlikely to adapt to climate change (i.e., evolutionary rescue) and to migrate upslope (i.e. gene flow)? Why or why not?
+
+* Do you think your study organisms will keep pace with climate change? If so, what process (e.g., evolutionary rescue, gene flow, phenotypic plasticity) might be most important?
