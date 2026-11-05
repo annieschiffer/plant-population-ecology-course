@@ -73,7 +73,7 @@ what is the lowest value of `d` that ensures metapopulation persistence? Why did
 
 P6. If we altered the disturbance so it only affected new seeds, and left the seedbank intact, 
 do you think the lowest value of `d` that ensures metapopulation persistence would go up or down?
-If you have the time, go ahead and alter the script to test your hypothesis (Hint: right now,
+EXTRA CREDIT (1 point): If you have the time, go ahead and alter the script to test your hypothesis (Hint: right now,
 the disturbance happens outside the population growth function; to make this change, I think you
 need to include the disturbance inside that function.)
 
