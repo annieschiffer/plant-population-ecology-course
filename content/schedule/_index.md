@@ -162,7 +162,7 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **November 12**
 
-* Lab: Problem Set 10
+* Lab: [Problem Set 10](/rmarkdown/ProblemSet10.html) and the main [R script](/rmarkdown/10_ecoevo.R)
 
 ---
 
