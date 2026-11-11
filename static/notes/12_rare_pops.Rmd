@@ -18,6 +18,7 @@ output: pdf_document
 * anthropogenic causes:
   + habitat fragmentation
   + overexploitation; ornamental plants
+  + invasive species
   + climate change
   
 # Population dynamics in rare populations
@@ -29,6 +30,9 @@ output: pdf_document
 * reproductive individuals randomly have few offspring for a few years -> extinction risk
 
 *plot two lines, large and small population with fluctuating populations, small pop goes to zero*
+
+* extinction risk increases when combined with environmental stochasticity *in models*
+* bad year -> lower population size -> demographic stochasticity extinction risk
 
 ## Inbreeding depression
 
@@ -43,7 +47,7 @@ output: pdf_document
   + smaller inflorescences
   + fewer seeds
 
-# Managing rare populations
+# Modeling
 
 ## Population viability analysis
 
@@ -59,3 +63,11 @@ output: pdf_document
 
 ![](pva.png)
 
+# Managing rare populations
+
+* depends on the cause of population decline
+  + example: habitat protection for fragmentation
+* assisted migration: moving plants to areas with suitable climate
+  + survive climate change *can't otherwise disperse to sutiable habitat*
+  + risks: aggressive genotypes, outbreeding depression (reduced fitness when too genetically distant)
+  + example: whitebark pine *threatened by pathogens, pests, and climate change; transplants in northern edge in Canada*

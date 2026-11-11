@@ -170,13 +170,13 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **November 17**
 
-* DUE: read TBD
-  + Discussion questions
+* DUE: read individually-assigned papers
+  + Discussion: describe key findings of your paper
 * DUE: Problem Set 10
-* Lecture on conservation of rare populations
+* Lecture on conservation of rare populations [notes](/notes/12_rare_pops.pdf)
 
 **November 19**
-* Intro to final projects
+
 * Work on final projects
 
 ---
@@ -213,11 +213,11 @@ Happy Thanksgiving!
 
 **December 8**
 
-* Work on final projects or lecture on intra-annual dynamics
+* DUE: final projects
+* Presentations
 
 **December 10**
 
-* DUE: final projects
-* Presentations
+No class - have a great winter break!
 
 
