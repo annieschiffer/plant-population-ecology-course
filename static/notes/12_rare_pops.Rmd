@@ -51,23 +51,24 @@ output: pdf_document
 
 ## Population viability analysis
 
-* terms
-  + persistence time: probability of persistence for given period of time
-  + extinction probability: proportion of simulations that end in extinction
-  + time to extinction: median or mean number of years to extinction
 * population model + simulations projecting past trends forward
   + multiple population models
   + density dependence, env. heterogeneity, etc.
   + simulations: include stochasticity
   + can add management scenarios
+* output:
+  + persistence time: time until population drops below critical threshold
+  + time to extinction: median or mean number of years to extinction
+  + extinction probability: proportion of simulations that end in extinction
+
 
 ![](pva.png)
 
 # Managing rare populations
 
 * depends on the cause of population decline
-  + example: habitat protection for fragmentation
+  + example: habitat fragmentation or endemism -> habitat protection
 * assisted migration: moving plants to areas with suitable climate
-  + survive climate change *can't otherwise disperse to sutiable habitat*
+  + goal: persist with climate change *can't otherwise disperse to suitable habitat*
   + risks: aggressive genotypes, outbreeding depression (reduced fitness when too genetically distant)
   + example: whitebark pine *threatened by pathogens, pests, and climate change; transplants in northern edge in Canada*
