@@ -185,9 +185,9 @@ second [R script](/rmarkdown/06_competition_g_varies.R) for the very last proble
 
 **November 25**
 
-* DUE: read [Melbourne et al. 2007](https://onlinelibrary.wiley.com/doi/epdf/10.1111/j.1461-0248.2006.00987.x)
-  + Discussion questions
-* Lecture on invasions
+* DUE: read [Brian et al. 2026](https://onlinelibrary.wiley.com/doi/10.1111/ele.70417)
+  + [Discussion questions](/discussion/week13.html)
+* Lecture on invasions [notes](/notes/13_invasions.pdf)
 
 **November 27**
 
@@ -201,7 +201,7 @@ Happy Thanksgiving!
 
 * DUE: read TBD
   + Discussion questions
-* Lecture on adaptive management (?)
+* Lecture on adaptive management
 
 **December 3**
 
