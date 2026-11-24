@@ -6,7 +6,8 @@ output: pdf_document
 # Learning objectives
 
 1. Understand the processes leading to plant invasions
-2. Know common frameworks in invasion research
+2. Know the differences between introduced, naturalized, and invasive plants
+3. Know the stages of invasion and factors influencing each stage
 
 *last lecture: Applied concepts to rare plant populations; now applying concepts to invasive plant populations*
 
@@ -42,18 +43,18 @@ output: pdf_document
 2. Establishment
   + increase from rarity
   + must tolerate climate
-  + often fast-growing generalists
   + overcome abiotic and biotic constraints *environment on local scales, resident competitors/enemies*
+  + often fast-growing generalists
   + high propagule pressure
 3. Spread
   + influenced by landscape structure and fragmentation
   + complex and least studied process
   
-*most of our understanding abut dispersal and spread comes from mathematical models that assume homogeneous environments*
+*most of our understanding about dispersal and spread comes from mathematical models that assume homogeneous environments*
 
 4. Impact
   + many low impact, a few very high impact 
-  + traits very different from residents -> high impact
+  + high impact spp. often have traits very different from residents
   + change ecosystem processes *nutrient cycling, hydrology, fire; cheatgrass and fire*
   + reduce native population size, but few natives extinct due to invasions *exception: fungal pathogen from China wiped out nearly all American Chestnut trees, functionally extinct, sprouts die before reproduction*
   + refuges from invader in range 
