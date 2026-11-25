@@ -199,9 +199,9 @@ Happy Thanksgiving!
 
 **December 1**
 
-* DUE: read TBD
-  + Discussion questions
-* Lecture on adaptive management
+* DUE: read [Armstrong et al. 2007](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2664.2007.01320.x)
+  + [Discussion questions](/discussion/week14.html)
+* Lecture on adaptive management [notes](/notes/14_management.pdf)
 
 **December 3**
 
